@@ -1,0 +1,258 @@
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+
+
+/* ****************************************Mockuo Store Section **************************************** */
+.mockup-store-section{
+  background-color: #f8f8f8;
+}
+.store-title{
+  color: var(--midnight-black);
+  font-size: 2.5rem;
+ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+}
+.header-line{
+  border-bottom: 2px solid var(--charcoal-shadow);
+}
+.header-line th{
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: var(--charcoal-shadow);
+  padding-bottom: 1rem;
+}
+
+.store-para{
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: var(--storm-gray);
+
+}
+th,td{
+  background-color: #f8f8f8 !important;
+}
+tr td{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--storm-gray);
+  
+
+}
+.bold-row{
+  color: var(--charcoal-shadow); 
+  font-weight: 600;
+  
+}
+td a{
+  text-decoration: none;
+  color: var(--sky-mist);
+}
+
+
+
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+ .store-para{
+  font-size: .9rem;
+ }
+ .header-line th{
+  font-size: 1rem;
+  padding-bottom: 10px;
+ }
+ tr td{
+  font-size: .8rem;
+ }
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .store-para{
+  font-size: 1.2rem;
+ }
+ .header-line th{
+  font-size: 1.9rem;
+  padding-bottom: 10px;
+ }
+ tr td{
+  font-size: 1.4rem;
+ }
+
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+ .store-para{
+  font-size: 1.2rem;
+ }
+ .header-line th{
+  font-size: 1.7rem;
+ }
+ tr td{
+  font-size: 1.3rem;
+ }
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+  
+}
+
+
+
+
+
+ 
+.best-plan-section{
+  background-color: var(--light-bg);
+}
+/* Styling card */
+.cards-div{
+  margin: 0;
+  padding-bottom: 20px;
+}
+.card-css {
+  box-shadow: 0 .3rem .8rem rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--sky-mist);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+ 
+}
+
+
+.card-css:hover {
+
+   transform: translateY(-5px) scale(1.02);
+  border-color: var(--storm-gray);
+}
+
+.heading-txt {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+.price-text{
+color: var(--charcoal-shadow);
+}
+.thicker-hr{
+height: 2.5px !important;
+border: none;
+background-color:var(--midnight-black);
+}
+
+
+/* ********************Include Icon **********************/
+.icon-div{
+display: flex; 
+align-items: center; 
+gap: 8px;
+}
+
+
+.icon-div p{
+margin: 0px;
+font-size: 1.5rem;
+font-family: sans-serif;
+color: var(--midnight-black);
+font-weight: 600;
+margin: .3rem 0 .3rem 0;
+
+}
+
+
+/* ****************** Styling li******************************* */
+ .spaced-list li {
+    margin-bottom: .6rem; 
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--charcoal-shadow);
+  }
+
+.best-plan-p{
+  display: inline;
+  padding-left: .3rem;
+  font-size: 1rem;
+  color: var(--midnight-black);
+}
+.plans-button {
+  padding: 0.5rem 2.3rem;
+  background-color: var(--sky-mist);
+  font-size: 1.5rem;
+}
+
+/* Hover effect */
+.plans-button:hover {
+  background-color: var(--storm-gray);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+  .plans-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    
+  }
+   .best-plan-small-icon {
+  width: 15px;
+  height: 15px;
+}
+ .best-plan-p{
+  font-size: .8rem;
+ }
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .plans-button {
+    font-size: 1.4rem;
+    padding: 0.45rem 2rem;
+  }
+ .best-plan-p{
+  font-size: 1.2rem;
+  
+ }
+ .best-plan-small-icon {
+  width: 20px;
+  height: 20px;
+}
+
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .best-plan-p{
+    font-size: .9rem;
+  }
+  .plans-button {
+    font-size: 1.4rem;
+    padding: 0.5rem 2.3rem;
+  }
+  .best-plan-small-icon {
+  width: 15px;
+  height: 15px;
+}
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .plans-button {
+    font-size: 1.5rem;
+    padding: 0.5rem 2.5rem;
+  }
+}
+
+
+
