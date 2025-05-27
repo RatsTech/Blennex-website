@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+body {
+     font-family: inter;
+}
+
+:root {
+    --Main-Heading : #000000;
+    --second-Heading : #1E1E1E;
+    --client-title : #757575;
+    --client-desrp : #B3B3B3;
+    --bg-color :  #ffffff;
+    --client-border : #D9D9D9;
+
+}
+
+
+/* why clients love Blennex  */
+.clientsLoveContainer{
+    padding: clamp(0.7rem,2vw,1.5rem);
+    background: linear-gradient(to right, #EEEEEE, #F8F9FB, #F6F8FB,#EFEBEB);
+}
+
+.cl-container{
+    background-color: var(--bg-color);
+}
+
+.sectionHeading{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--Main-Heading);
+    margin: clamp(1rem,3vw,2rem);
+}
+
+.client{
+    padding: clamp(0.6rem,5vw,1.5rem);
+    margin: clamp(0.6rem,5vw,1.5rem);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.client:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.clientHeading{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: clamp(0.5rem,1.5vw,1.5rem);
+    color: var(--second-Heading);
+}
+
+.clientimg{
+    width: clamp(2rem, 4vw, 2.5rem);
+    height: clamp(2rem, 4vw, 2.5rem);
+}
+
+.clientinfo{
+    font-family: inter;
+}
+
+.clientTitle{
+    color: var(--client-title);
+    font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+}
+
+.clientdescription {
+    color: var(--client-desrp);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+}
+
+.border{
+    border-color: var(--client-border);
+    border-radius: 0.5rem;
+}
+
+/* @media (max-width : 576px){
+    .row{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        scroll-snap-type: x mandatory;
+    }
+    .col-12 {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+} */
+
+
+/* Contact us  */
+.contact{
+    background-color: var(--bg-color);
+    padding: clamp(1rem,2vw,3rem);
+}
+
+.cheading{
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    margin-bottom: clamp(0.8rem,2vw,2rem);
+    color: #4A4849;
+
+}
+.ctext{
+    font-size: clamp(0.6rem, 1.4vw, 1.2rem);
+    color : #4A4849;
+}
+
+.group label {
+    width: 5.2rem;
+    font-size: clamp(1rem,2vw,1.2rem);
+    margin-bottom: clamp(0.4rem,1vw,0.8rem);
+    margin-top: clamp(0.4rem,1vw,0.8rem);
+}
+
+.address {
+    margin-bottom: clamp(0.8rem,2vw,1.2rem);
+}
+
+.cf-btn{
+    background-color: #97D8E8;
+    color: var(--bg-color);
+    width: 35%;
+    border: none;
+    font-size: clamp(1rem,2vw,1.2rem);
+    border-radius: 2rem;
+}
+
+.cf-btn:hover {
+    color: var(--bg-color);
+    background-color: #97D8E8;
+}
+
+/* Footer  */
+.footer {
+    background-color: #575757;
+    color: var(--bg-color);
+    padding-top: clamp(1.5rem,2vw,3.5rem);
+    padding-bottom: clamp(1.5rem,2vw,3.5rem);
+}
+
+.fHeading {
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin: clamp(0.5rem,1.5vw,1.5rem);
+    margin-top: clamp(1.5rem,3vw,2.5rem);
+}
+
+.fcontents{
+    font-size: clamp(1rem,2vw,1.5rem);
+    list-style: none;
+    color: var(--bg-color);
+}
+.fanchor {
+    text-decoration: none;
+}
+
+.fsignup-input{
+    padding: clamp(0.1rem,0.6vw,0.3rem);
+}
+
+.footer-btn {
+    background-color: var(--bg-color);
+    color: var(--Main-Heading);
+    border-radius: 0rem;
+    font-size: clamp(1rem,1vw,2rem);
+}
+
+.footer-btn:hover{
+    background-color: var(--bg-color);
+    color: var(--Main-Heading);
+}
+
+
+
