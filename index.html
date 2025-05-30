@@ -14,39 +14,58 @@
 
  <header class="header px-md-5 px-0">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container-fluid css-nav-container">
         <img  class="logo" src="assets/images/Branding Assets 1-13 1.png" alt="">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navigation collapse navbar-collapse ms-lg-5 ms-0" id="navbarNav">
+        <div class="navigation collapse navbar-collapse ms-lg-5 ms-0 css-nav-link-container" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center css-breadcrumb-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link active css-nav-link" href="#">Work</a>
+            </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+              Services<span class="breadcrumb-separator ms-1">›</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+            </ul>
+          </li>
 
+                      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                Packages<span class="breadcrumb-separator ms-1">›</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Starter</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+               
+              </ul>
+            </li>
 
-          <ul class="navbar-nav gap-3">
+        
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mockups</a>
+              <a class="nav-link css-nav-link" href="#">Mockups</a>
             </li>
           </ul>
 
 
-          <ul class="navbar-nav gap-2">
+
+          <div>
+            <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="btn rounded-pill css-portfolio-link" href="#">Portfolio</a>
             </li>
-            <li class="nav-item mt-1">
-              <button class="button-1 px-3 py-1 bg-info border border-0">Contact</button>
+            <li class="nav-item ">
+              <button class="btn rounded-pill  css-portfolio-link-blue">Contact</button>
             </li>
           </ul>
+          </div>
 
 
         </div>
@@ -584,5 +603,29 @@
     cloneScrollRow("row1");
     cloneScrollRow("row2", true);
   </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+      const arrowIcon = toggle.querySelector('.breadcrumb-separator');
+
+      dropdown.addEventListener('show.bs.dropdown', () => {
+        if (arrowIcon) {
+          arrowIcon.classList.add('rotate-90');
+        }
+      });
+
+      dropdown.addEventListener('hide.bs.dropdown', () => {
+        if (arrowIcon) {
+          arrowIcon.classList.remove('rotate-90');
+        }
+      });
+    });
+  });
+</script>
+
+
 </body>
 </html>

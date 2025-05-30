@@ -5,6 +5,135 @@
   
 }
 
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+
+
+/* Navbar css */
+.css-nav-container{
+  padding-top: 15px;
+}
+.css-nav-link-container{
+  padding-left: 1rem;
+  padding-right:1.3rem;
+}
+.css-nav-link {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: var(--midnight-black);
+  font-weight: 500;
+}
+
+
+.css-portfolio-link{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--storm-gray);
+  padding: .5rem 1.2rem .5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.css-portfolio-link:hover{
+  color: var(--storm-gray);
+  background-color: #F6F8FB;
+
+}
+.css-portfolio-link-blue{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--sky-mist);
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}
+.css-portfolio-link-blue:hover{
+  background-color: #F6F8FB;
+  color: var(--sky-mist);
+}
+
+
+
+.breadcrumb-separator {
+  color: var(--midnight-black);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 4px; /* small spacing between text and arrow */
+  display: inline-block;
+  user-select: none;
+  padding-left: 5px;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+}
+
+
+
+.breadcrumb-separator:hover {
+  cursor: help;
+  transform: scale(1.1);
+}
+
+/* Optional: Smooth dropdown styles */
+/* Modern Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
+  padding: 0.5rem 0;
+  font-family: sans-serif;
+}
+
+.dropdown-item {
+  color: var(--midnight-black);
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--sky-mist);
+  color: var(--midnight-black);
+  font-weight: 500;
+}
+
+.dropdown-menu.show {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Remove Bootstrap's default caret arrow */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+.breadcrumb-separator.rotate-90 {
+  transform: rotate(90deg);
+}
+
+/* Header css  */
+
 .header{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
 linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
@@ -85,3 +214,4 @@ border: none;
   border-radius: 15px;
 
 }
+
