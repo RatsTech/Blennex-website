@@ -32,6 +32,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
 font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem);
+font-family: sans-serif;
 }
 .hero h1 span{
   color: #97D8E8;
