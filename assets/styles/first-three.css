@@ -40,6 +40,7 @@ font-family: sans-serif;
 .hero p{
 font-size: clamp(0.75rem, 0.4286rem + 1.6071vw, 1.875rem);
 letter-spacing: 3px;
+font-family: sans-serif;
 }
 .button2 button{
   background-color: #4A4849;
