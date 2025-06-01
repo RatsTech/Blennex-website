@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/styles/portfolio-section.css">
     <link rel="stylesheet" href="./assets/styles/last-3-sec.css">
     <link rel="stylesheet" href="./assets/styles/first-three.css">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <title>Mockup Section</title>
 </head>
 <body>
@@ -74,68 +77,102 @@
     </nav>
   </header>
 
-  <section class="hero px-md-5 px-0">
-    <div class="container-fluid pt-5 ">
-      <h1 class="">Shape your</h1>
-      <h1><span>Brand</span>, Visually</h1>
-      <p class="py-3">Impactful Packaging & 3D Designs That Speak Without Words.</p>
-    </div>
-    <div class="button2 d-flex justify-content-lg-end justify-content-center py-5"><button class="py-2 px-4">New
-        Projects?</button></div>
-  </section>
+<section class="hero px-md-5 px-0">
+  <div class="container-fluid css-hero-section">
+    <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out">Shape your</h1>
+    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+      <span>Brand</span>, Visually
+    </h1>
+    <p class="py-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      Impactful Packaging & 3D Designs That Speak Without Words.
+    </p>
+  </div>
+
+  <div class="button2 d-flex justify-content-lg-end justify-content-center py-5"
+       data-aos="zoom-in-up"
+       data-aos-delay="700"
+       data-aos-duration="800"
+       data-aos-easing="ease-out-back">
+    <button class="btn rounded-pill py-2 px-4">New Projects?</button>
+  </div>
+</section>
+
 
   <section>
 
     <div class="Proudly_Designed container-fluid mt-1 px-md-5 px-3 ">
-      <div class="row ">
-        <h2 class="mt-sm-5 mt-2 text-center">Proudly Designed For</h2>
-        <ul class="logo1 d-flex justify-content-between  mt-5" style="overflow: hidden;">
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white ">Logo1</div>
-          </li>
-        </ul>
+      <div class="row py-4 ">
+        <h2 class="mt-sm-5 mt-2 text-center portfolio-title">Proudly Designed For</h2>
+      <div class="logo-slider-container overflow-hidden">
+  <ul class="logo-slider d-flex">
+    <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+
+    <!-- Duplicate for smooth infinite scroll -->
+    <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+     <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+     <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+    
+    
+
+  </ul>
+</div>
+
+
+
 
 
       </div>
 
-
-      <div class="row reveiw d-flex justify-content-center mt-md-5 mt-2 py-5">
-        <div class="col-md-8 col-12 ">
-          <div class="row">
-            <div class="col-4">
-              <span class="text-center">
-                <h1>06</h1>
-                <p>Years of Experience</p>
-              </span>
-            </div>
-            <div class="col-4">
-              <span class="text-center">
-                <h1>300+</h1>
-                <p>Happy Clients Worldwide</p>
-              </span>
-            </div>
-            <div class="col-4">
-              <span class="text-center">
-                <h1>5.0</h1>
-                <p>Rated on Upwork/Fiverr</p>
-              </span>
-            </div>
-
-          </div>
-        </div>
+<div class="row reveiw d-flex justify-content-center mt-md-5 mt-2 py-5">
+  <div class="col-md-8 col-12">
+    <div class="row text-center text-charcoal ">
+      
+      <!-- Years of Experience -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="100">
+        <span>
+          <h1 class="count" data-target="6" data-format="2digit">00</h1>
+          <p class="css-portfolio-p">Years of Experience</p>
+        </span>
       </div>
+
+      <!-- Happy Clients -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="200">
+        <span>
+          <h1 class="count" data-target="300" data-format="number-plus">0+</h1>
+          <p class="css-portfolio-p">Happy Clients Worldwide</p>
+        </span>
+      </div>
+
+      <!-- Rating with Star on Left -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="300">
+        <span>
+          <h1 class="count rating" data-target="5.0" data-format="star">⭐ 0.0</h1>
+          <p class="css-portfolio-p">Rated on Upwork/Fiverr</p>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
     </div>
 
@@ -602,8 +639,8 @@
 
     cloneScrollRow("row1");
     cloneScrollRow("row2", true);
-  </script>
- <script>
+</script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -626,6 +663,65 @@
   });
 </script>
 
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.count');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseFloat(counter.getAttribute('data-target'));
+          const format = counter.getAttribute('data-format');
+          const duration = 1800; // slightly faster
+          const startTime = performance.now();
+
+          const animate = (time) => {
+            const progress = Math.min((time - startTime) / duration, 1);
+            let currentValue = target * progress;
+
+            if (format === "2digit") {
+              counter.textContent = currentValue < 10
+                ? "0" + Math.floor(currentValue)
+                : Math.floor(currentValue);
+            } else if (format === "number-plus") {
+              counter.textContent = Math.floor(currentValue) + "+";
+            } else if (format === "star") {
+  counter.innerHTML = `<span class="star">⭐</span> ${currentValue.toFixed(1)}`;
+}
+
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            }
+          };
+
+          requestAnimationFrame(animate);
+          observer.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => observer.observe(counter));
+  });
+</script>
+
+
+
+<script>
+  AOS.init({
+    once: true,       // Animation happens once
+    duration: 800,    // Speed of AOS animation
+    easing: 'ease-out'
+  });
+</script>
 
 </body>
 </html>

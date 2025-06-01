@@ -30,9 +30,12 @@
   font-family: sans-serif;
   color: var(--midnight-black);
   font-weight: 500;
+     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
 }
 
-
+.css-nav-link:hover{
+  transform: scale(1.1);
+}
 .css-portfolio-link{
   font-family: sans-serif;
   color: #F6F8FB;
@@ -89,10 +92,12 @@
   box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
   padding: 0.5rem 0;
   font-family: sans-serif;
+
 }
 
 .dropdown-item {
-  color: var(--midnight-black);
+color: var(--storm-gray);
+  font-weight: 500;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -148,9 +153,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   justify-content: space-between;
  
 }
-.button-1{
-  border-radius: 20px;
-}
 
 
 
@@ -158,9 +160,15 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
 linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
+.css-hero-section{
+  padding-top: 80px;
+}
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
 font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem);
+font-family: sans-serif;
+color: var(--charcoal-shadow);
+font-weight: 600;
 }
 .hero h1 span{
   color: #97D8E8;
@@ -168,22 +176,88 @@ font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem);
 .hero p{
 font-size: clamp(0.75rem, 0.4286rem + 1.6071vw, 1.875rem);
 letter-spacing: 3px;
+font-family: sans-serif;
+color: var(--charcoal-shadow);
+}
+.button2{
+  padding-right: 160px;
+
 }
 .button2 button{
-  background-color: #4A4849;
-  color: white;
-border: none;
-  border-radius: 20px;
+  background-color: var(--charcoal-shadow);
+  color: var(--frost-blue);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 .Proudly_Designed{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
 
 }
-.logo1{
-  list-style-type: none;
+.logo-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.logo1 li div{
-  font-size: clamp(0.6875rem, 0.1477rem + 2.6989vw, 1.875rem);
+
+.logo-slider {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 30s linear infinite;
+}
+
+.logo-slider li {
+  flex: 0 0 auto;
+  padding: 0 30px;
+}
+
+.logo-slider img {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* FIXED Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.count {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--charcoal-shadow);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.rating .star {
+  font-size: 4rem;       /* Make star the same size as text */
+  color: var(--charcoal-shadow); /* Exact same color */
+  line-height: 1;
+}
+
+
+.css-portfolio-p{
+  font-family: sans-serif;
+  color: var(--charcoal-shadow);
+  font-family: 500;
+  letter-spacing: 3px;
 }
 .reveiw{
   display: flex;
@@ -192,8 +266,10 @@ border: none;
 .reveiw p{
   font-size: clamp(0.6875rem, 0.5208rem + 0.8333vw, 1.25rem);
 }
+
 .Proudly_Designed{
   border-bottom: 2px dashed black;
+  padding-bottom: 120px;
 }
 .three{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
