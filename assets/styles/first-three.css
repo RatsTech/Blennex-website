@@ -2,8 +2,143 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
   
 }
+
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+
+
+/* Navbar css */
+.css-nav-container{
+  padding-top: 15px;
+}
+.css-nav-link-container{
+  padding-left: 1rem;
+  padding-right:1.3rem;
+}
+.css-nav-link {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: var(--midnight-black);
+  font-weight: 500;
+     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+}
+
+.css-nav-link:hover{
+  transform: scale(1.1);
+}
+.css-portfolio-link{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--storm-gray);
+  padding: .5rem 1.2rem .5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.css-portfolio-link:hover{
+  color: var(--storm-gray);
+  background-color: #F6F8FB;
+
+}
+.css-portfolio-link-blue{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--sky-mist);
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}
+.css-portfolio-link-blue:hover{
+  background-color: #F6F8FB;
+  color: var(--sky-mist);
+}
+
+
+
+.breadcrumb-separator {
+  color: var(--midnight-black);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 4px; /* small spacing between text and arrow */
+  display: inline-block;
+  user-select: none;
+  padding-left: 5px;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+}
+
+
+
+.breadcrumb-separator:hover {
+  cursor: help;
+  transform: scale(1.1);
+}
+
+/* Optional: Smooth dropdown styles */
+/* Modern Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
+  padding: 0.5rem 0;
+  font-family: sans-serif;
+
+}
+
+.dropdown-item {
+color: var(--storm-gray);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--sky-mist);
+  color: var(--midnight-black);
+  font-weight: 500;
+}
+
+.dropdown-menu.show {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Remove Bootstrap's default caret arrow */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+.breadcrumb-separator.rotate-90 {
+  transform: rotate(90deg);
+}
+
+/* Header css  */
 
 .header{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
@@ -19,15 +154,15 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   justify-content: space-between;
  
 }
-.button-1{
-  border-radius: 20px;
-}
 
 
 
 .hero{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
 linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+.css-hero-section{
+  padding-top: 80px;
 }
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
@@ -40,22 +175,88 @@ font-family: sans-serif;
 .hero p{
 font-size: clamp(0.75rem, 0.4286rem + 1.6071vw, 1.875rem);
 letter-spacing: 3px;
+font-family: sans-serif;
+color: var(--charcoal-shadow);
+}
+.button2{
+  padding-right: 160px;
+
 }
 .button2 button{
-  background-color: #4A4849;
-  color: white;
-border: none;
-  border-radius: 20px;
+  background-color: var(--charcoal-shadow);
+  color: var(--frost-blue);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 .Proudly_Designed{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
 
 }
-.logo1{
-  list-style-type: none;
+.logo-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.logo1 li div{
-  font-size: clamp(0.6875rem, 0.1477rem + 2.6989vw, 1.875rem);
+
+.logo-slider {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 30s linear infinite;
+}
+
+.logo-slider li {
+  flex: 0 0 auto;
+  padding: 0 30px;
+}
+
+.logo-slider img {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* FIXED Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.count {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--charcoal-shadow);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.rating .star {
+  font-size: 4rem;       /* Make star the same size as text */
+  color: var(--charcoal-shadow); /* Exact same color */
+  line-height: 1;
+}
+
+
+.css-portfolio-p{
+  font-family: sans-serif;
+  color: var(--charcoal-shadow);
+  font-family: 500;
+  letter-spacing: 3px;
 }
 .reveiw{
   display: flex;
@@ -64,15 +265,16 @@ border: none;
 .reveiw p{
   font-size: clamp(0.6875rem, 0.5208rem + 0.8333vw, 1.25rem);
 }
+
 .Proudly_Designed{
   border-bottom: 2px dashed black;
+  padding-bottom: 120px;
 }
 .three{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
+  padding-bottom: 4rem;
 }
-.three h1{
-  font-size: clamp(1.25rem, 1.0648rem + 0.9259vw, 1.875rem);
-}
+
 .three img{
   display: flex;
   justify-content: center !important;
@@ -80,9 +282,42 @@ border: none;
 }
 .card1{
   border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card1 img{
   border: 2px solid black;
   border-radius: 15px;
+
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-title{
+  font-size: 2rem;
+  color: var(--midnight-black);
+  font-weight: 700;
+}
+.card-body{
+  padding-bottom: 2rem;
+}
+.card-text{
+  font-size: 1.1rem;
+  color: var(--charcoal-shadow);
+  font-weight: 500;
+}
+.css-craft-btn{
+  background-color: var(--sky-mist);
+ border: none;
+ border-radius:0px;
+ padding: .7rem 2rem;
+ font-weight: 500;
+}
+.css-craft-btn:hover{
+  background-color: var(--charcoal-shadow);
+}
+.css-craft-btn svg{
+  padding-bottom: .3rem;
+  padding-left: .4rem;
 
 }

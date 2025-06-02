@@ -8,45 +8,67 @@
     <link rel="stylesheet" href="./assets/styles/portfolio-section.css">
     <link rel="stylesheet" href="./assets/styles/last-3-sec.css">
     <link rel="stylesheet" href="./assets/styles/first-three.css">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <title>Mockup Section</title>
 </head>
 <body>
 
  <header class="header px-md-5 px-0">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container-fluid css-nav-container">
         <img  class="logo" src="assets/images/Branding Assets 1-13 1.png" alt="">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navigation collapse navbar-collapse ms-lg-5 ms-0" id="navbarNav">
+        <div class="navigation collapse navbar-collapse ms-lg-5 ms-0 css-nav-link-container" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center css-breadcrumb-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link active css-nav-link" href="#">Work</a>
+            </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+              Services<span class="breadcrumb-separator ms-1">›</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+            </ul>
+          </li>
 
+                      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                Packages<span class="breadcrumb-separator ms-1">›</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Starter</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+               
+              </ul>
+            </li>
 
-          <ul class="navbar-nav gap-3">
+        
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mockups</a>
+              <a class="nav-link css-nav-link" href="#">Mockups</a>
             </li>
           </ul>
 
 
-          <ul class="navbar-nav gap-2">
+
+          <div>
+            <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="btn rounded-pill css-portfolio-link" href="#">Portfolio</a>
             </li>
-            <li class="nav-item mt-1">
-              <button class="button-1 px-3 py-1 bg-info border border-0">Contact</button>
+            <li class="nav-item ">
+              <button class="btn rounded-pill  css-portfolio-link-blue">Contact</button>
             </li>
           </ul>
+          </div>
 
 
         </div>
@@ -55,68 +77,102 @@
     </nav>
   </header>
 
-  <section class="hero px-md-5 px-0">
-    <div class="container-fluid pt-5 ">
-      <h1 class="">Shape your</h1>
-      <h1><span>Brand</span>, Visually</h1>
-      <p class="py-3">Impactful Packaging & 3D Designs That Speak Without Words.</p>
-    </div>
-    <div class="button2 d-flex justify-content-lg-end justify-content-center py-5"><button class="py-2 px-4">New
-        Projects?</button></div>
-  </section>
+<section class="hero px-md-5 px-0">
+  <div class="container-fluid css-hero-section">
+    <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out">Shape your</h1>
+    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+      <span>Brand</span>, Visually
+    </h1>
+    <p class="py-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      Impactful Packaging & 3D Designs That Speak Without Words.
+    </p>
+  </div>
+
+  <div class="button2 d-flex justify-content-lg-end justify-content-center py-5"
+       data-aos="zoom-in-up"
+       data-aos-delay="700"
+       data-aos-duration="800"
+       data-aos-easing="ease-out-back">
+    <button class="btn rounded-pill py-2 px-4">New Projects?</button>
+  </div>
+</section>
+
 
   <section>
 
     <div class="Proudly_Designed container-fluid mt-1 px-md-5 px-3 ">
-      <div class="row ">
-        <h2 class="mt-sm-5 mt-2 text-center">Proudly Designed For</h2>
-        <ul class="logo1 d-flex justify-content-between  mt-5" style="overflow: hidden;">
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white">Logo1</div>
-          </li>
-          <li>
-            <div class="px-md-3 px-0 py-2 bg-white ">Logo1</div>
-          </li>
-        </ul>
+      <div class="row py-4 ">
+        <h2 class="mt-sm-5 mt-2 text-center portfolio-title" data-aos="fade-down" data-aos-duration="1000">Proudly Designed For</h2>
+      <div class="logo-slider-container overflow-hidden">
+  <ul class="logo-slider d-flex">
+    <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+
+    <!-- Duplicate for smooth infinite scroll -->
+    <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+     <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+     <li><img src="assets/images/logo.png" alt="Logo1" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo2" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo3" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo4" /></li>
+    <li><img src="assets/images/logo.png" alt="Logo5" /></li>
+    
+    
+
+  </ul>
+</div>
+
+
+
 
 
       </div>
 
-
-      <div class="row reveiw d-flex justify-content-center mt-md-5 mt-2 py-5">
-        <div class="col-md-8 col-12 ">
-          <div class="row">
-            <div class="col-4">
-              <span class="text-center">
-                <h1>06</h1>
-                <p>Years of Experience</p>
-              </span>
-            </div>
-            <div class="col-4">
-              <span class="text-center">
-                <h1>300+</h1>
-                <p>Happy Clients Worldwide</p>
-              </span>
-            </div>
-            <div class="col-4">
-              <span class="text-center">
-                <h1>5.0</h1>
-                <p>Rated on Upwork/Fiverr</p>
-              </span>
-            </div>
-
-          </div>
-        </div>
+<div class="row reveiw d-flex justify-content-center mt-md-5 mt-2 py-5">
+  <div class="col-md-8 col-12">
+    <div class="row text-center text-charcoal ">
+      
+      <!-- Years of Experience -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="100">
+        <span>
+          <h1 class="count" data-target="6" data-format="2digit">00</h1>
+          <p class="css-portfolio-p">Years of Experience</p>
+        </span>
       </div>
+
+      <!-- Happy Clients -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="200">
+        <span>
+          <h1 class="count" data-target="300" data-format="number-plus">0+</h1>
+          <p class="css-portfolio-p">Happy Clients Worldwide</p>
+        </span>
+      </div>
+
+      <!-- Rating with Star on Left -->
+      <div class="col-4" data-aos="fade-up" data-aos-delay="300">
+        <span>
+          <h1 class="count rating" data-target="5.0" data-format="star">⭐ 0.0</h1>
+          <p class="css-portfolio-p">Rated on Upwork/Fiverr</p>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
     </div>
 
@@ -124,10 +180,10 @@
 
 
 
-<section class="portfolio-section">
+<section class="portfolio-section mt-1">
      <!-- First row (scrolling left) -->
-  <div class="">
-    <h3 class="text-center portfolio-title">Our Work Speaks Louder Than Words</h3>
+  <div class="mt-1">
+    <h3 class="text-center portfolio-title"data-aos="fade-down" data-aos-duration="1000">Our Work Speaks Louder Than Words</h3>
     <div class="scroll-wrapper">
     <div class="scroll-row" id="row1">
       <img src="./assets/images/Collection Mockup 2.png" alt="" />
@@ -153,102 +209,131 @@
   </div>
 </section>
 
-
- <section class="three mt-2 ">
-    <div class="container-fluid">
-      <div class="our_work d-flex justify-content-center">
-        <h1 class="mt-md-5 mt-4 text-center">Crafted Services Built to Scale Your Brand</h1>
-      </div>
-      <div class="row d-flex justify-content-center mt-sm-5 mt-2">
-        <div class="col-sm-10 col-12">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-12">
-              <div class="card text-center mb-3 border-0">
-                <div class="card1 card-body">
-                  <div class="d-flex justify-content-center"><img src="assets/images/Frame (1).png" alt="" width="60px"></div>
-                  <h5 class="card-title">Brand Identity</h5>
-                  <p class="card-text">Build a memorable brand that speaks your story across every touchpoint.</p>
-                  <a href="#" class="btn btn-primary text-uppercase">Learn more</a>
+<section class="three" data-aos="fade-up">
+  <div class="container-fluid mt-1">
+    <div class="our_work d-flex justify-content-center">
+      <h1 class="mt-md-5 py-5 text-center portfolio-title" data-aos="fade-down" data-aos-delay="100">Crafted Services Built to Scale Your Brand</h1>
+    </div>
+    <div class="row d-flex justify-content-center mt-sm-5">
+      <div class="col-sm-10 col-12">
+        <div class="row d-flex justify-content-center">
+        
+          <div class="col-lg-4 col-12" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card text-center border-0">
+              <div class="card1 card-body">
+                <div class="d-flex justify-content-center py-3">
+                  <img src="assets/images/Frame (1).png" alt="" width="100px">
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="card text-center mb-3 border-0">
-                <div class="card1 card-body">
-                  <div class="d-flex justify-content-center"><img src="assets/images/Frame.png" alt="" width="60px"></div>
-                  <h5 class="card-title">Packaging & Label</h5>
-                  <p class="card-text">Turn your product into a shelf-stopper with strategic and stunning design</p>
-                  <a href="#" class="btn btn-primary text-uppercase">Learn more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="card text-center mb-3 border-0">
-                <div class="card1 card-body">
-                  <div class="d-flex justify-content-center"><img src="assets/images/Frame1.png" alt="" width="60px"></div>
-                  <h5 class="card-title">3D Product Mockups</h5>
-                  <p class="card-text">Bring your products to life with hyper-realistic, ad-ready visual mockups</p>
-                  <a href="#" class="btn btn-primary text-uppercase">Learn more</a>
-                </div>
+                <h5 class="card-title py-3">Brand Identity</h5>
+                <p class="card-text">Build a memorable brand that speaks your story across every touchpoint.</p>
+                <a href="#" class="btn btn-primary text-uppercase css-craft-btn">
+                  Learn more
+                  <svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.41675 15.5834L15.5834 6.41675M15.5834 6.41675H6.41675M15.5834 6.41675V15.5834" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
+          <div class="col-lg-4 col-12" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card text-center border-0">
+              <div class="card1 card-body">
+                <div class="d-flex justify-content-center py-3">
+                  <img src="assets/images/Frame.png" alt="" width="100px">
+                </div>
+                <h5 class="card-title py-3">Packaging & Label</h5>
+                <p class="card-text">Turn your product into a shelf-stopper with strategic and stunning design</p>
+                <a href="#" class="btn btn-primary text-uppercase css-craft-btn">
+                  Learn more
+                  <svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.41675 15.5834L15.5834 6.41675M15.5834 6.41675H6.41675M15.5834 6.41675V15.5834" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12" data-aos="zoom-in" data-aos-delay="600">
+            <div class="card text-center py-1 border-0">
+              <div class="card1 card-body">
+                <div class="d-flex justify-content-center py-3">
+                  <img src="assets/images/Frame1.png" alt="" width="100px">
+                </div>
+                <h5 class="card-title py-3">3D Product Mockups</h5>
+                <p class="card-text">Bring your products to life with hyper-realistic, ad-ready visual mockups</p>
+                <a href="#" class="btn btn-primary text-uppercase css-craft-btn">
+                  Learn more
+                  <svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.41675 15.5834L15.5834 6.41675M15.5834 6.41675H6.41675M15.5834 6.41675V15.5834" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-
     </div>
-  </section>
-
-<section class="mockup-store-section">
-    <div class="container mt-5 mockup-store-back">
-        <h2 class="text-center pt-5 store-title">Mockup Store</h2>
-        <p class="text-center mt-4 store-para" >Perfect for showcasing your products with high-quality, photorealistic visuals.</p>
-        <div class="table-responsive mt-5">
-            <table class="table table-borderless">
-                <thead>
-                    <tr class="header-line">
-                        <th>Mockup Type</th>
-                        <th>Example</th>
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="bold-row py-4">Box Mockup</td>
-                        <td class="py-4">Luxury Box Mockup</td>
-                        <td class="bold-row py-4">$60</td>
-                        <td class="py-4"><a href="#">View Details</a></td>
-                    </tr>
-                    <tr>
-                        <td class="bold-row py-4">Label Mockup</td>
-                        <td class="py-4">Bottle Label Mockup</td>
-                        <td class="bold-row py-4">$60</td>
-                        <td class="py-4"><a href="#">View Details</a></td>
-                    </tr>
-                    <tr>
-                        <td class="bold-row py-4">Pouch Mockup</td>
-                        <td class="py-4">Food Pouch Mockup</td>
-                        <td class="bold-row py-4">$80</td>
-                        <td class="py-4"><a href="#">View Details</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
+  </div>
 </section>
 
 
+
+
+
+
+<section class="mockup-store-section" data-aos="fade-up">
+  <div class="container mt-1 mockup-store-back " data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-center pt-5 store-title" data-aos="zoom-in" data-aos-delay="200">Mockup Store</h2>
+    <p class="text-center mt-4 store-para" data-aos="fade-up" data-aos-delay="300">
+      Perfect for showcasing your products with high-quality, photorealistic visuals.
+    </p>
+    <div class="table-responsive mt-5" data-aos="fade-up" data-aos-delay="400">
+      <table class="table table-borderless">
+        <thead>
+          <tr class="header-line" data-aos="fade-down" data-aos-delay="500">
+            <th>Mockup Type</th>
+            <th>Example</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-aos="fade-up" data-aos-delay="600">
+            <td class="bold-row py-4">Box Mockup</td>
+            <td class="py-4">Luxury Box Mockup</td>
+            <td class="bold-row py-4">$60</td>
+            <td class="py-4"><a href="#">View Details</a></td>
+          </tr>
+          <tr data-aos="fade-up" data-aos-delay="700">
+            <td class="bold-row py-4">Label Mockup</td>
+            <td class="py-4">Bottle Label Mockup</td>
+            <td class="bold-row py-4">$60</td>
+            <td class="py-4"><a href="#">View Details</a></td>
+          </tr>
+          <tr data-aos="fade-up" data-aos-delay="800">
+            <td class="bold-row py-4">Pouch Mockup</td>
+            <td class="py-4">Food Pouch Mockup</td>
+            <td class="bold-row py-4">$80</td>
+            <td class="py-4"><a href="#">View Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+  
+
 <section class="best-plan-section">
   <div class="container mt-5 py-4">
-    <h2 class="text-center pt-3 heading-txt">Choose Best Plan For Your Business</h2>
+    <h2 class="text-center pt-3 heading-txt" data-aos="fade-up" data-aos-duration="1000">Choose Best Plan For Your Business</h2>
     
     <div class="row mt-5 g-4 cards-div">
 
       <!-- Card 1 -->
-      <div class="col-lg-4 col-md-6  best-plan-card-wrapper">
+      <div class="col-lg-4 col-md-6  best-plan-card-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="card card-css h-100 best-plan-card">
           <div class="ps-4">
           <h4 class="">Brand Identity Package</h4>
@@ -302,7 +387,7 @@
 
       <!-- Card 2 -->
       
- <div class="col-lg-4 col-md-6  best-plan-card-wrapper">
+ <div class="col-lg-4 col-md-6  best-plan-card-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="card card-css h-100 best-plan-card">
            <div class="ps-4">
           <h4 class="">Brand Identity Package</h4>
@@ -354,7 +439,7 @@
         </div>
       </div>
       <!-- Card 3 -->
-       <div class="col-lg-4 col-md-6  best-plan-card">
+       <div class="col-lg-4 col-md-6  best-plan-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="card card-css h-100">
           <div class="ps-4">
           <h4 class="">Brand Identity Package</h4>
@@ -412,124 +497,127 @@
 
 <!-- Why clients love blennex  -->
 <section class="WhyClientsLoveBlennex">
-        <div class="clientsLoveContainer d-flex justify-content-center align-items-center">
-            <div class="container cl-container m-0 p-0 w-100">
-                <h2 class="sectionHeading text-center fw-semibold">Why Clients Love Blennex</h2>
-                <div class="row g-3 w-100 pb-5 ps-3">
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0">
-                    <div class="client border border-1 d-flex flex-wrap">
-                        <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
-                        <div class="imgandtext d-flex align-items-center justify-content-center">
-                        <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
-                        <div class="clientinfo text-start flex-grow-1">
-                            <h6 class="clientTitle fw-semibold">Title</h6>
-                            <p class="clientdescription fw-light mb-0">Description of a client</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+  <div class="clientsLoveContainer d-flex justify-content-center align-items-center">
+    <div class="container cl-container m-0 p-0 w-100">
+      <h2 class="sectionHeading text-center fw-semibold" data-aos="fade-down" data-aos-duration="1000">Why Clients Love Blennex</h2>
+      <div class="row g-3 w-100 pb-5 ps-3">
+        <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other client blocks with increasing delay -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center p-0 m-0" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
+          <div class="client border border-1 d-flex flex-wrap">
+            <h4 class="clientHeading fw-semibold fs-4 w-100 text-start">"Quote"</h4>
+            <div class="imgandtext d-flex align-items-center justify-content-center">
+              <div class="clientimg rounded-circle overflow-hidden me-3 mb-2"><img src="./assets/images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Client image"></div>
+              <div class="clientinfo text-start flex-grow-1">
+                <h6 class="clientTitle fw-semibold">Title</h6>
+                <p class="clientdescription fw-light mb-0">Description of a client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Continue similarly for remaining items -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- CONTACT SECTION  -->
-     <section class="contactUs">
-        <div class="contact d-flex justify-content-center align-items-center">
-            <div class="container m-0 p-0">
-                <h2 class="sectionHeading text-uppercase text-center fw-semibold">contact us</h2>
-                 <div class="row g-3 d-flex align-items-start">
-                    <div class="col-12 col-md-6 col-lg-6 p-0 d-flex justify-content-center align-self-center">
-                        <div class="contactUsText">
-                            <h4 class="cheading fw-semibold">Let&rsquo;s Start a Conversation</h4>
-                            <p class="ctext fw-light">Have a question or need a quote? We&rsquo;d love to hear from you. Fill out the form below or reach us directly at:</p>
-                        </div>
-                    </div>
-                    <div class="cform col-12 col-md-6 col-lg-6 p-0 d-flex justify-content-center">
-                        <form action="/submit" method="post">
-                            <div class="address group">
-                            <label for="address" class="form-label fw-light">Address : </label>
-                            <textarea name="address" id="address" rows="4" class="form-control" required></textarea>
-                            </div>
-                            <div class="phoneNo group">
-                                <label for="phone" class="form-label fw-light">Phone : </label>
-                                <input type="tel" name="phone" id="phone" required>
-                            </div>
-                            <div class="email group">
-                                <label for="email" class="form-label fw-light">Email : </label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <button type="submit" class="btn btn-primary cf-btn pt-0 pb-0 mt-3">Submit</button>
-                        </form>
-                    </div>
-                    </div>
-                 </div>
-            </div>
+     <section class="contactUs" >
+  <div class="contact d-flex justify-content-center align-items-center">
+    <div class="container m-0 p-0">
+      <h2 class="sectionHeading text-uppercase text-center fw-semibold" data-aos="fade-down" data-aos-duration="800">contact us</h2>
+      <div class="row g-3 d-flex align-items-start">
+        
+        <div class="col-12 col-md-6 col-lg-6 p-0 d-flex justify-content-center align-self-center" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <div class="contactUsText">
+            <h4 class="cheading fw-semibold">Let&rsquo;s Start a Conversation</h4>
+            <p class="ctext fw-light">Have a question or need a quote? We&rsquo;d love to hear from you. Fill out the form below or reach us directly at:</p>
+          </div>
         </div>
-    </section>
+        
+        <div class="cform col-12 col-md-6 col-lg-6 p-0 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+          <form action="/submit" method="post">
+            <div class="address group">
+              <label for="address" class="form-label fw-light">Address : </label>
+              <textarea name="address" id="address" rows="4" class="form-control" required></textarea>
+            </div>
+            <div class="phoneNo group">
+              <label for="phone" class="form-label fw-light">Phone : </label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div class="email group">
+              <label for="email" class="form-label fw-light">Email : </label>
+              <input type="email" name="email" id="email">
+            </div>
+            <button type="submit" class="btn btn-primary cf-btn pt-0 pb-0 mt-3">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- FOOTER SECTION  -->
     <footer class="footer">
         <div class="footer d-flex justify-content-center align-items-center">
@@ -583,6 +671,89 @@
 
     cloneScrollRow("row1");
     cloneScrollRow("row2", true);
-  </script>
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+      const arrowIcon = toggle.querySelector('.breadcrumb-separator');
+
+      dropdown.addEventListener('show.bs.dropdown', () => {
+        if (arrowIcon) {
+          arrowIcon.classList.add('rotate-90');
+        }
+      });
+
+      dropdown.addEventListener('hide.bs.dropdown', () => {
+        if (arrowIcon) {
+          arrowIcon.classList.remove('rotate-90');
+        }
+      });
+    });
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.count');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseFloat(counter.getAttribute('data-target'));
+          const format = counter.getAttribute('data-format');
+          const duration = 1800; // slightly faster
+          const startTime = performance.now();
+
+          const animate = (time) => {
+            const progress = Math.min((time - startTime) / duration, 1);
+            let currentValue = target * progress;
+
+            if (format === "2digit") {
+              counter.textContent = currentValue < 10
+                ? "0" + Math.floor(currentValue)
+                : Math.floor(currentValue);
+            } else if (format === "number-plus") {
+              counter.textContent = Math.floor(currentValue) + "+";
+            } else if (format === "star") {
+  counter.innerHTML = `<span class="star">⭐</span> ${currentValue.toFixed(1)}`;
+}
+
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            }
+          };
+
+          requestAnimationFrame(animate);
+          observer.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => observer.observe(counter));
+  });
+</script>
+
+
+
+<script>
+  AOS.init({
+    once: true,       // Animation happens once
+    duration: 800,    // Speed of AOS animation
+    easing: 'ease-out'
+  });
+</script>
+
 </body>
 </html>
