@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
   
 }
 
@@ -273,10 +274,9 @@ color: var(--charcoal-shadow);
 }
 .three{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
+  padding-bottom: 4rem;
 }
-.three h1{
-  font-size: clamp(1.25rem, 1.0648rem + 0.9259vw, 1.875rem);
-}
+
 .three img{
   display: flex;
   justify-content: center !important;
@@ -284,10 +284,42 @@ color: var(--charcoal-shadow);
 }
 .card1{
   border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card1 img{
   border: 2px solid black;
   border-radius: 15px;
 
 }
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-title{
+  font-size: 2rem;
+  color: var(--midnight-black);
+  font-weight: 700;
+}
+.card-body{
+  padding-bottom: 2rem;
+}
+.card-text{
+  font-size: 1.1rem;
+  color: var(--charcoal-shadow);
+  font-weight: 500;
+}
+.css-craft-btn{
+  background-color: var(--sky-mist);
+ border: none;
+ border-radius:0px;
+ padding: .7rem 2rem;
+ font-weight: 500;
+}
+.css-craft-btn:hover{
+  background-color: var(--charcoal-shadow);
+}
+.css-craft-btn svg{
+  padding-bottom: .3rem;
+  padding-left: .4rem;
 
+}
