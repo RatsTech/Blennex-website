@@ -18,10 +18,13 @@
 
 
 
+
+
 /* Navbar css */
 .css-nav-container{
   padding-top: 15px;
 }
+
 .css-nav-link-container{
   padding-left: 1rem;
   padding-right:1.3rem;
@@ -74,7 +77,7 @@
   display: inline-block;
   user-select: none;
   padding-left: 5px;
-   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+   transition: transform 0.4s ease-in-out; /* Material Design-style easing */
 }
 
 
@@ -97,7 +100,7 @@
 }
 
 .dropdown-item {
-color: var(--storm-gray);
+
   font-weight: 500;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
@@ -108,25 +111,11 @@ color: var(--storm-gray);
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background-color: var(--sky-mist);
-  color: var(--midnight-black);
+  color: var(--sky-mist);
   font-weight: 500;
 }
 
-.dropdown-menu.show {
-  animation: fadeInDown 0.3s ease-out;
-}
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /* Remove Bootstrap's default caret arrow */
 .nav-link.dropdown-toggle::after {
   display: none !important;
@@ -134,9 +123,37 @@ color: var(--storm-gray);
 
 
 
-.breadcrumb-separator.rotate-90 {
-  transform: rotate(90deg);
+
+
+
+/* Show dropdown menu on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
+
+/* Optional: Add smooth transition */
+.dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: Rotate the breadcrumb icon on hover */
+.dropdown:hover .breadcrumb-separator {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
 
 /* Header css  */
 
@@ -168,6 +185,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
 font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem);
 font-family: sans-serif;
+font-weight: 700;
 }
 .hero h1 span{
   color: #97D8E8;
@@ -179,7 +197,12 @@ font-family: sans-serif;
 color: var(--charcoal-shadow);
 }
 .button2{
-  padding-right: 160px;
+  
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
 
 }
 .button2 button{
@@ -321,3 +344,4 @@ color: var(--charcoal-shadow);
   padding-left: .4rem;
 
 }
+
