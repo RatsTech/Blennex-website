@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/portfolio-section.css">
     <link rel="stylesheet" href="./assets/styles/last-3-sec.css">
     <link rel="stylesheet" href="./assets/styles/first-three.css">
+    <link rel="stylesheet" href="./assets/styles/navbar.css">
     <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -16,9 +17,9 @@
 <body>
 
  <header class="header px-md-5 px-0">
-    <nav class="navbar navbar-expand-lg sticky-navbar">
+    <nav id="myNavbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid css-nav-container">
-        <img  class="logo" src="assets/images/Branding Assets 1-13 1.png" alt="">
+        <img id="navbarLogo" class="nav-logo" src="assets/images/logo-light.png" alt="">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,15 +29,16 @@
             <li class="nav-item">
               <a class="nav-link active css-nav-link" href="#">Work</a>
             </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button" >
-              Services<span class="breadcrumb-separator ms-1">›</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Graphic Design</a></li>
-              <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
-            </ul>
-          </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center" href="#" role="button">
+                Services<span class="breadcrumb-separator ms-1">›</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                <li><a class="dropdown-item" href="#">UI/UX</a></li>
+               
+              </ul>
+            </li>
 
                       
             <li class="nav-item dropdown">
@@ -93,7 +95,13 @@
        data-aos-delay="700"
        data-aos-duration="800"
        data-aos-easing="ease-out-back">
-    <button class="btn rounded-pill py-2 px-4">New Projects?</button>
+    <div class="ripple-container">
+      <button class="btn rounded-pill py-2 px-4 organic-ripple-button">New Projects?
+         <span class="ripple ripple1"></span>
+        <span class="ripple ripple2"></span>
+        <span class="ripple ripple3"></span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -657,6 +665,22 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
 </script>
+<!--  Navbar scroll script -->
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('myNavbar');
+    const logo = document.getElementById('navbarLogo');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+      logo.src = 'assets/images/logo-light.png'; // your dark logo
+    } else {
+      navbar.classList.remove('scrolled');
+      logo.src = 'assets/images/logo-dark.png'; // your light logo
+    }
+  });
+</script>
+
 <script>
     function cloneScrollRow(rowId, reverse = false) {
       const row = document.getElementById(rowId);

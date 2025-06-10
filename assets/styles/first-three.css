@@ -20,138 +20,78 @@
 
 
 
-/* Navbar css */
-.css-nav-container{
-  padding-top: 15px;
-}
-
-.css-nav-link-container{
-  padding-left: 1rem;
-  padding-right:1.3rem;
-}
-.css-nav-link {
-  font-size: 1.3rem;
-  font-family: sans-serif;
-  color: var(--midnight-black);
-  font-weight: 500;
-     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
-}
-
-.css-nav-link:hover{
-  transform: scale(1.1);
-}
-.css-portfolio-link{
-  font-family: sans-serif;
-  color: #F6F8FB;
-  font-size: 1.2rem;
-  background-color: var(--storm-gray);
-  padding: .5rem 1.2rem .5rem 1.2rem;
-  border-radius: 20px;
-}
-
-.css-portfolio-link:hover{
-  color: var(--storm-gray);
-  background-color: #F6F8FB;
-
-}
-.css-portfolio-link-blue{
-  font-family: sans-serif;
-  color: #F6F8FB;
-  font-size: 1.2rem;
-  background-color: var(--sky-mist);
-  padding: 8px 20px 8px 20px;
-  border-radius: 20px;
-}
-.css-portfolio-link-blue:hover{
-  background-color: #F6F8FB;
-  color: var(--sky-mist);
-}
-
-
-
-.breadcrumb-separator {
-  color: var(--midnight-black);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-left: 4px; /* small spacing between text and arrow */
+.ripple-container {
+  position: relative;
   display: inline-block;
-  user-select: none;
-  padding-left: 5px;
-   transition: transform 0.4s ease-in-out; /* Material Design-style easing */
 }
 
-
-
-.breadcrumb-separator:hover {
-  cursor: help;
-  transform: scale(1.1);
-}
-
-/* Optional: Smooth dropdown styles */
-/* Modern Dropdown Menu */
-.dropdown-menu {
-  background-color: #ffffff;
+.organic-ripple-button {
+  position: relative;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
-  padding: 0.5rem 0;
-  font-family: sans-serif;
-
+  cursor: pointer;
+  overflow: visible;
+  z-index: 1;
+  top: -120px;
 }
 
-.dropdown-item {
-
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 8px;
-
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: var(--sky-mist);
-  font-weight: 500;
-}
-
-
-/* Remove Bootstrap's default caret arrow */
-.nav-link.dropdown-toggle::after {
-  display: none !important;
-}
-
-
-
-
-
-
-/* Show dropdown menu on hover */
-.navbar-nav .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-/* Optional: Add smooth transition */
-.dropdown-menu {
-  transition: opacity 0.2s ease-in-out;
+/* Ripple base */
+.ripple {
+  position: absolute;
+  border: 1.2px solid rgba(99, 100, 100, .4);
+  border-radius: 45% 55% 60% 40% / 60% 50% 40% 45%; /* Irregular shape */
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  transform: scale(1);
+  z-index: -1;
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
+  animation: organicRipple 4s infinite ease-out;
+
 }
 
-.dropdown:hover .dropdown-menu {
+/* Different delays for more realism */
+.ripple1 {
+  animation-delay: 0s;
+}
+.ripple2 {
+  animation-delay: 1.5s;
+}
+.ripple3 {
+  animation-delay: 2.8s;
+}
+
+/* Keyframes for ripple motion */
+@keyframes organicRipple {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+.organic-ripple-button:hover .ripple {
+  animation-play-state: paused;
+  opacity: 0 !important;
+  transition: opacity 0.4s ease;
+}
+
+.organic-ripple-button .ripple {
   opacity: 1;
-  visibility: visible;
+  transition: opacity 0.4s ease;
+  animation-play-state: running;
 }
-
-/* Optional: Rotate the breadcrumb icon on hover */
-.dropdown:hover .breadcrumb-separator {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-
-
 
 
 
@@ -177,9 +117,10 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 .hero{
   background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
 linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
 }
 .css-hero-section{
-  padding-top: 80px;
+  padding-top: 150px;
 }
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
