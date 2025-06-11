@@ -7,10 +7,16 @@
   --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
 }
 
+.nav-logo {
+  height: 90px;
+  transition: height 0.3s ease;
+}
 
 .navbar.scrolled .nav-logo {
-  height: 70px;
+  height: 60px;
 }
+
+
 /* Navbar css */
 
   /* Default navbar style */
