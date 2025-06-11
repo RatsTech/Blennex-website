@@ -667,19 +667,23 @@
 </script>
 <!--  Navbar scroll script -->
 <script>
-  window.addEventListener('scroll', function () {
+  function handleNavbarScroll() {
     const navbar = document.getElementById('myNavbar');
     const logo = document.getElementById('navbarLogo');
 
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
-      logo.src = 'assets/images/logo-light.png'; // your dark logo
+      logo.src = 'assets/images/logo-light.png'; // dark logo for scrolled navbar
     } else {
       navbar.classList.remove('scrolled');
-      logo.src = 'assets/images/logo-dark.png'; // your light logo
+      logo.src = 'assets/images/logo-dark.png'; // light logo for default navbar
     }
-  });
+  }
+
+  window.addEventListener('scroll', handleNavbarScroll);
+  window.addEventListener('load', handleNavbarScroll);
 </script>
+
 
 <script>
     function cloneScrollRow(rowId, reverse = false) {
