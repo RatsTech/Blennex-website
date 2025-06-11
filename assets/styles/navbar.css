@@ -1,0 +1,187 @@
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+.navbar.scrolled .nav-logo {
+  height: 70px;
+}
+/* Navbar css */
+
+  /* Default navbar style */
+  .navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* Style when user scrolls down */
+  .navbar.scrolled {
+    background-color:var(--midnight-black) !important; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.scrolled  .css-nav-link{
+    color: #F6F8FB !important;
+    font-size: 1.2rem;
+  }
+
+
+.navbar.scrolled .breadcrumb-separator {
+ color: #F6F8FB;
+}
+.css-nav-link-container{
+  padding-left: 1rem;
+  padding-right:1.3rem;
+}
+.css-nav-link {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: var(--midnight-black);
+  font-weight: 500;
+ transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+}
+
+.css-nav-link:hover{
+  transform: scale(1.1);
+}
+.css-portfolio-link{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--storm-gray);
+  padding: .5rem 1.2rem .5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.css-portfolio-link:hover{
+  color: var(--storm-gray);
+  background-color: #F6F8FB;
+
+}
+.css-portfolio-link-blue{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.2rem;
+  background-color: var(--sky-mist);
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}
+.css-portfolio-link-blue:hover{
+  background-color: #F6F8FB;
+  color: var(--sky-mist);
+}
+
+
+
+.breadcrumb-separator {
+  color: var(--midnight-black);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 4px; /* small spacing between text and arrow */
+  display: inline-block;
+  user-select: none;
+  padding-left: 5px;
+   transition: transform 0.4s ease-in-out; /* Material Design-style easing */
+}
+
+
+
+.breadcrumb-separator:hover {
+  cursor: help;
+  transform: scale(1.1);
+}
+
+/* Optional: Smooth dropdown styles */
+/* Modern Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
+  padding: 0.5rem 0;
+  font-family: sans-serif;
+
+}
+
+.dropdown-item {
+
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--sky-mist);
+  font-weight: 500;
+}
+
+
+/* Remove Bootstrap's default caret arrow */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+
+
+
+/* Show dropdown menu on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Optional: Add smooth transition */
+.dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: Rotate the breadcrumb icon on hover */
+.dropdown:hover .breadcrumb-separator {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.has-submenu:hover .submenu {
+  display: flex;
+}
+
+.submenu-link {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: var(--frost-blue);
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.submenu-link:hover {
+  color: var(--sky-mist);
+}
