@@ -1,10 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  
-}
+
 
 
 :root {
@@ -97,11 +91,7 @@
 
 /* Header css  */
 
-.header{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
-}
 @media  screen and (min-width: 320px) and (max-width: 425px) {
   .logo{
   width: 50%;
@@ -114,11 +104,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
 
 
-.hero{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
-}
 .css-hero-section{
   padding-top: 150px;
 }
@@ -155,10 +141,6 @@ color: var(--charcoal-shadow);
 }
 
 
-.Proudly_Designed{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
-
-}
 .logo-slider-container {
   width: 100%;
   overflow: hidden;
@@ -235,7 +217,7 @@ color: var(--charcoal-shadow);
   padding-bottom: 120px;
 }
 .three{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
+
   padding-bottom: 4rem;
 }
 

@@ -1,11 +1,7 @@
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+
 
    .portfolio-section {
-      background-color: #f8f8f8;
+     
       font-family: sans-serif;
       padding-top: 70px;
     }

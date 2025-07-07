@@ -1,13 +1,5 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-   
-}
 
-body {
-     font-family: inter;
-}
+
 
 :root {
     --Main-Heading : #000000;
@@ -23,7 +15,7 @@ body {
 /* why clients love Blennex  */
 .clientsLoveContainer{
     padding: clamp(0.7rem,2vw,1.5rem);
-    background: linear-gradient(to right, #EEEEEE, #F8F9FB, #F6F8FB,#EFEBEB);
+   
 }
 
 .cl-container{
@@ -92,7 +84,7 @@ body {
 
 /* Contact us  */
 .contact{
-    background-color: var(--bg-color);
+   
     padding: clamp(1rem,2vw,3rem);
 }
 
