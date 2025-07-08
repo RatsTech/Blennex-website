@@ -39,6 +39,16 @@
 }
 
 /* Ripple base */
+.bton{
+  
+  animation: zoomInOut 1.5s infinite;
+  transition: transform 0.2s;
+}
+@keyframes zoomInOut {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
 .ripple {
   position: absolute;
   border: 1.2px solid rgba(99, 100, 100, .4);
@@ -110,6 +120,13 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 .navigation{
   justify-content: space-between;
  
+}
+.navigation ul li a{
+   font-size: 14px;
+   
+}
+.navigation ul{
+  gap: 18%;
 }
 
 
@@ -231,7 +248,7 @@ color: var(--charcoal-shadow);
 }
 
 .Proudly_Designed{
-  border-bottom: 2px dashed black;
+ 
   padding-bottom: 120px;
 }
 .three{
