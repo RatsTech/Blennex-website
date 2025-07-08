@@ -8,13 +8,11 @@
 }
 
 .nav-logo {
-  height: 90px;
+  height: 70px;
   transition: height 0.3s ease;
 }
 
-.navbar.scrolled .nav-logo {
-  height: 60px;
-}
+
 
 
 /* Navbar css */
@@ -32,7 +30,7 @@
 
   .navbar.scrolled  .css-nav-link{
     color: #F6F8FB !important;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
 
@@ -40,11 +38,11 @@
  color: #F6F8FB;
 }
 .css-nav-link-container{
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right:1.3rem;
 }
 .css-nav-link {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   color: var(--midnight-black);
   font-weight: 500;
@@ -190,4 +188,17 @@
 
 .submenu-link:hover {
   color: var(--sky-mist);
+}
+
+
+
+
+@media  screen and (min-width: 320px) and (max-width: 425px) {
+  .logo{
+  width: 50%;
+}
+}
+.navigation{
+  justify-content: space-between;
+ 
 }
