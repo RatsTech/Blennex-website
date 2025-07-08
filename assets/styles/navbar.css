@@ -19,7 +19,7 @@
 
   /* Default navbar style */
   .navbar {
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.7s, box-shadow 0.7s ease-in-out;
   }
 
   /* Style when user scrolls down */
@@ -32,7 +32,12 @@
     color: #F6F8FB !important;
     font-size: 1.1rem;
   }
-
+.navbar.scrolled .portfolio-link{
+  color: #ffffff;
+}
+.navbar.scrolled .portfolio-link:hover{
+  color: var(--sky-mist);
+}
 
 .navbar.scrolled .breadcrumb-separator {
  color: #F6F8FB;
@@ -47,6 +52,20 @@
   color: var(--midnight-black);
   font-weight: 500;
  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+}
+.portfolio-link{
+  background-color: transparent;
+  padding: 8px 20px;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--midnight-black); /* Or any text color */
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.portfolio-link:hover{
+ background-color: transparent;
+  color: var(--sky-mist); /* optional hover color */
+  cursor: pointer;
 }
 
 .css-nav-link:hover{
