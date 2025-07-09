@@ -19,6 +19,16 @@
 }
 
 /* Ripple base */
+.bton{
+  
+  animation: zoomInOut 1.5s infinite;
+  transition: transform 0.2s;
+}
+@keyframes zoomInOut {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
 .ripple {
   position: absolute;
   border: 1.2px solid rgba(99, 100, 100, .4);
