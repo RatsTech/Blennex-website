@@ -14,9 +14,28 @@
 
 
 
+
 /* Header css  */
 
 
+
+}
+@media  screen and (min-width: 320px) and (max-width: 425px) {
+  .logo{
+  width: 50%;
+}
+}
+.navigation{
+  justify-content: space-between;
+ 
+}
+.navigation ul li a{
+   font-size: 14px;
+   
+}
+.navigation ul{
+  gap: 18%;
+}
 
 
 
@@ -130,7 +149,7 @@ color: var(--charcoal-shadow);
 }
 
 .Proudly_Designed{
-  border-bottom: 2px dashed black;
+ 
   padding-bottom: 120px;
 }
 .three{
