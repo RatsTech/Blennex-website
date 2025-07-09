@@ -1,10 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  
-}
+
 
 
 :root {
@@ -16,6 +10,7 @@
 }
 
 
+<<<<<<< HEAD
 .ripple-container {
   position: relative;
   display: inline-block;
@@ -98,14 +93,16 @@
   transition: opacity 0.4s ease;
   animation-play-state: running;
 }
+=======
+
+
+>>>>>>> b9c7026431bee1184b87f86079416166d50e70d5
 
 
 
 /* Header css  */
 
-.header{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
 
 }
 @media  screen and (min-width: 320px) and (max-width: 425px) {
@@ -127,13 +124,10 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
 
 
-.hero{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
-}
 .css-hero-section{
-  padding-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 60px;
 }
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
@@ -168,10 +162,6 @@ color: var(--charcoal-shadow);
 }
 
 
-.Proudly_Designed{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
-
-}
 .logo-slider-container {
   width: 100%;
   overflow: hidden;
@@ -248,7 +238,7 @@ color: var(--charcoal-shadow);
   padding-bottom: 120px;
 }
 .three{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
+
   padding-bottom: 4rem;
 }
 
@@ -268,7 +258,7 @@ color: var(--charcoal-shadow);
 }
 .card1:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
 }
 .card-title{
   font-size: 2rem;

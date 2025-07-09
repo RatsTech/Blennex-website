@@ -1,20 +1,16 @@
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+
 
    .portfolio-section {
-      background-color: #f8f8f8;
+      
       font-family: sans-serif;
       padding-top: 70px;
     }
 .portfolio-title{
   color: var(--midnight-black);
   font-size: 2.5rem;
- font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   font-weight: 600;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
 }
     .scroll-wrapper {
       overflow: hidden;
