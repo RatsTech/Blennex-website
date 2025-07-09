@@ -121,15 +121,19 @@ body {
 .cf-btn{
     background-color: #97D8E8;
     color: var(--bg-color);
-    width: 35%;
+    width: 45%;
     border: none;
-    font-size: clamp(1rem,2vw,1.2rem);
+    font-size: clamp(1.2rem,2vw,1.5rem);
     border-radius: 2rem;
 }
 
 .cf-btn:hover {
-    color: var(--bg-color);
-    background-color: #97D8E8;
+    color: #97D8E8;
+    background-color: var(--bg-color);
+}
+.cf-btn:active {
+    color: #97D8E8;
+    background-color: var(--bg-color) !important;
 }
 
 /* Footer  */
@@ -143,11 +147,19 @@ body {
 .fHeading {
     font-size: clamp(1rem,2vw,1.5rem);
     margin: clamp(0.5rem,1.5vw,1.5rem);
-    margin-top: clamp(1.5rem,3vw,2.5rem);
+}
+
+.fdiv {
+    height: 100%;
+}
+.fline {
+    border: 0.1rem solid #ffffff;
+    width: 50%;
+    margin: clamp(0.5rem,1.5vw,1.5rem);
 }
 
 .fcontents{
-    font-size: clamp(1rem,2vw,1.5rem);
+    font-size: clamp(0.9rem,1.2vw,1.3rem);
     list-style: none;
     color: var(--bg-color);
 }
