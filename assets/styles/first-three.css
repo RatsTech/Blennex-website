@@ -1,10 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  
-}
+
 
 
 :root {
@@ -20,96 +14,10 @@
 
 
 
-.ripple-container {
-  position: relative;
-  display: inline-block;
-}
-
-.organic-ripple-button {
-  position: relative;
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  overflow: visible;
-  z-index: 1;
-  top: -120px;
-}
-
-/* Ripple base */
-.bton{
-  
-  animation: zoomInOut 1.5s infinite;
-  transition: transform 0.2s;
-}
-@keyframes zoomInOut {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}
-.ripple {
-  position: absolute;
-  border: 1.2px solid rgba(99, 100, 100, .4);
-  border-radius: 45% 55% 60% 40% / 60% 50% 40% 45%; /* Irregular shape */
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0;
-  transform: scale(1);
-  z-index: -1;
-  opacity: 0;
-  pointer-events: none;
-  animation: organicRipple 4s infinite ease-out;
-
-}
-
-/* Different delays for more realism */
-.ripple1 {
-  animation-delay: 0s;
-}
-.ripple2 {
-  animation-delay: 1.5s;
-}
-.ripple3 {
-  animation-delay: 2.8s;
-}
-
-/* Keyframes for ripple motion */
-@keyframes organicRipple {
-  0% {
-    transform: scale(1);
-    opacity: 0.3;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.15;
-  }
-  100% {
-    transform: scale(2.1);
-    opacity: 0;
-  }
-}
-.organic-ripple-button:hover .ripple {
-  animation-play-state: paused;
-  opacity: 0 !important;
-  transition: opacity 0.4s ease;
-}
-
-.organic-ripple-button .ripple {
-  opacity: 1;
-  transition: opacity 0.4s ease;
-  animation-play-state: running;
-}
-
-
 
 /* Header css  */
 
-.header{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
 
 }
 @media  screen and (min-width: 320px) and (max-width: 425px) {
@@ -131,13 +39,10 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
 
 
-.hero{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%),
-linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
-}
 .css-hero-section{
-  padding-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 60px;
 }
 .hero h1{
 /* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
@@ -172,10 +77,6 @@ color: var(--charcoal-shadow);
 }
 
 
-.Proudly_Designed{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
-
-}
 .logo-slider-container {
   width: 100%;
   overflow: hidden;
@@ -252,7 +153,7 @@ color: var(--charcoal-shadow);
   padding-bottom: 120px;
 }
 .three{
-  background: linear-gradient(90deg, #EEEEEE 0%, #F8F9FB 33.33%, #F6F8FB 66.67%, #EFEBEB 100%);
+
   padding-bottom: 4rem;
 }
 
@@ -272,7 +173,7 @@ color: var(--charcoal-shadow);
 }
 .card1:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
 }
 .card-title{
   font-size: 2rem;

@@ -11,7 +11,7 @@
 
 /* ****************************************Mockuo Store Section **************************************** */
 .mockup-store-section{
-  background-color: #f8f8f8;
+ padding-top: 2rem;
   padding-bottom: 4rem;
   
   
@@ -61,12 +61,17 @@ td a{
   text-decoration: none;
   color: var(--sky-mist);
 }
-
+td a:hover{
+  text-decoration: underline;
+}
 
 
 /* Resonponsiveness */
 /* Small screens (phones: <576px) */
 @media (max-width: 575.98px) {
+  .store-title{
+    font-size: 1.8rem;
+  }
  .store-para{
   font-size: .9rem;
  }
@@ -116,21 +121,34 @@ td a{
 
 
 
- 
-.best-plan-section{
-  background-color: var(--light-bg);
+
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Adjust as needed */
+  margin-top: 1rem;
 }
+
+
+
+
 /* Styling card */
 .cards-div{
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+ 
 }
 .card-css {
   box-shadow: 0 .3rem .8rem rgba(0, 0, 0, 0.2);
   border: 2px solid var(--sky-mist);
-  padding: 1rem;
+  padding:1rem;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  
+  min-height: auto;
+  max-width: 380px;
+  margin: auto;
  
 }
 
@@ -142,11 +160,14 @@ td a{
 }
 
 .heading-txt {
-  font-size: 2.5rem;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  font-size: 2.3rem;
   font-family: 'Segoe UI', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 .price-text{
+font-size: 1.7rem;
 color: var(--charcoal-shadow);
 }
 .thicker-hr{
@@ -160,17 +181,19 @@ background-color:var(--midnight-black);
 .icon-div{
 display: flex; 
 align-items: center; 
-gap: 8px;
+gap: 0px;
+
 }
 
 
 .icon-div p{
-margin: 0px;
-font-size: 1.5rem;
+
+font-size: 1.3rem;
 font-family: sans-serif;
 color: var(--midnight-black);
 font-weight: 600;
 margin: .3rem 0 .3rem 0;
+margin-left: 10px;
 
 }
 
@@ -178,11 +201,15 @@ margin: .3rem 0 .3rem 0;
 /* ****************** Styling li******************************* */
  .spaced-list li {
     margin-bottom: .6rem; 
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--charcoal-shadow);
+    margin-right: 100px;
+    
   }
-
+ .spaced-list li span{
+  margin-right: 10px;
+ }
 .best-plan-p{
   display: inline;
   padding-left: .3rem;
@@ -190,20 +217,24 @@ margin: .3rem 0 .3rem 0;
   color: var(--midnight-black);
 }
 .plans-button {
-  padding: 0.5rem 2.3rem;
+  padding: 0.3rem 1.5rem !important;
   background-color: var(--sky-mist);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
 .plans-button:hover {
   background-color: var(--storm-gray);
   color: white;
-  transition: background-color 0.3s ease;
+  
 }
 /* Resonponsiveness */
 /* Small screens (phones: <576px) */
 @media (max-width: 575.98px) {
+  .heading-txt{
+    font-size: 1.7rem;
+  }
   .plans-button {
     font-size: 1rem;
     padding: 0.8rem 1.8rem;
