@@ -1,0 +1,88 @@
+.three{
+
+  padding-bottom: 4rem;
+}
+
+.three img{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.card1{
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card1 img{
+  border: 2px solid black;
+  border-radius: 15px;
+
+}
+.card1:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
+}
+.card-title{
+  font-size: 2rem;
+  color: var(--midnight-black);
+  font-weight: 700;
+}
+.card-body{
+  padding-bottom: 2rem;
+}
+.card-text{
+  font-size: 1.1rem;
+  color: var(--charcoal-shadow);
+  font-weight: 500;
+}
+.css-craft-btn{
+  background-color: var(--sky-mist);
+ border: none;
+ border-radius:0px;
+ padding: .7rem 2rem;
+ font-weight: 500;
+}
+.css-craft-btn:hover{
+  background-color: var(--charcoal-shadow);
+}
+.css-craft-btn svg{
+  padding-bottom: .3rem;
+  padding-left: .4rem;
+
+}
+
+
+/* * Resonponsiveness */ 
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+  .card1 img{
+    width: 80px;
+  }
+  .card-title{
+    font-size: 24px !important;
+  }
+  .card-text{
+    font-size: 16px;
+  }
+  .css-craft-btn{
+    font-size: 14px;
+  }
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+  
+
+} */
+
+/* Large screens (768px to 1199.98px) */
+/* @media (min-width: 768px) and (max-width: 1199.98px) {
+ 
+} */
+
+/* Extra-large screens (1200px and above) */
+/* @media (min-width: 1200px) {
+ 
+} */
+
+
+

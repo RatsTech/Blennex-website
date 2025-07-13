@@ -1,0 +1,122 @@
+.logo-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 30s linear infinite;
+}
+
+.logo-slider li {
+  flex: 0 0 auto;
+  padding: 0 30px;
+}
+
+.logo-slider img {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* FIXED Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.count {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--charcoal-shadow);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.rating .star {
+  font-size: 4rem;       /* Make star the same size as text */
+  color: var(--charcoal-shadow); /* Exact same color */
+  line-height: 1;
+}
+
+
+.css-portfolio-p{
+  font-family: sans-serif;
+  color: var(--charcoal-shadow);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.reveiw{
+  display: flex;
+  justify-content: space-between;
+}
+.reveiw p{
+  font-size: clamp(0.6875rem, 0.5208rem + 0.8333vw, 1.25rem);
+}
+
+.Proudly_Designed{
+  
+  padding-bottom: 120px;
+}
+
+
+
+
+
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+.logo-slider img{
+  height: 70px;
+}
+.count{
+  font-size: 2.3rem;
+}
+.rating .star{
+  font-size: 2rem;
+}
+ }
+
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+
+
+.rating .star {
+  font-size: 2rem;       /* Make star the same size as text */
+  color: var(--charcoal-shadow); /* Exact same color */
+  line-height: 1;
+}
+
+
+
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+ 
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+ 
+}
+
+
+

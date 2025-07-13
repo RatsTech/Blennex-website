@@ -73,6 +73,10 @@
 /* Resonponsiveness */
 /* Small screens (phones: <576px) */
 @media (max-width: 575.98px) {
+
+.portfolio-section{
+  padding-top: 0;
+}
  .scroll-row img {
       height: 150px;
       border-radius: 8px;

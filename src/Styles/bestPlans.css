@@ -1,136 +1,12 @@
-:root {
-  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
-  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
-  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
-  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
-  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
-}
-
-
-
-
-/* ****************************************Mockuo Store Section **************************************** */
-.mockup-store-section{
- padding-top: 2rem;
-  padding-bottom: 4rem;
-  
-  
-}
-
-.store-title{
-  color: var(--midnight-black);
-  font-size: 2.5rem;
- font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-  font-weight: 600;
-}
-.header-line{
-  border-bottom: 2px solid var(--charcoal-shadow);
-}
-.header-line th{
-  font-size: 2rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: var(--charcoal-shadow);
-  padding-bottom: 1rem;
-}
-
-.store-para{
-  font-size: 1.4rem;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: var(--storm-gray);
-
-}
-th,td{
-  background-color: #f8f8f8 !important;
-}
-tr td{
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--storm-gray);
-  
-
-}
-.bold-row{
-  color: var(--charcoal-shadow); 
-  font-weight: 600;
-  
-}
-td a{
-  text-decoration: none;
-  color: var(--sky-mist);
-}
-td a:hover{
-  text-decoration: underline;
-}
-
-
-/* Resonponsiveness */
-/* Small screens (phones: <576px) */
-@media (max-width: 575.98px) {
-  .store-title{
-    font-size: 1.8rem;
-  }
- .store-para{
-  font-size: .9rem;
- }
- .header-line th{
-  font-size: 1rem;
-  padding-bottom: 10px;
- }
- tr td{
-  font-size: .8rem;
- }
-}
-
-/* Medium screens (tablets: 576px to 767.98px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .store-para{
-  font-size: 1.2rem;
- }
- .header-line th{
-  font-size: 1.9rem;
-  padding-bottom: 10px;
- }
- tr td{
-  font-size: 1.4rem;
- }
-
-}
-
-/* Large screens (768px to 1199.98px) */
-@media (min-width: 768px) and (max-width: 1199.98px) {
- .store-para{
-  font-size: 1.2rem;
- }
- .header-line th{
-  font-size: 1.7rem;
- }
- tr td{
-  font-size: 1.3rem;
- }
-}
-
-/* Extra-large screens (1200px and above) */
-@media (min-width: 1200px) {
-  
-}
-
-
-
-
-
 
 
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px; /* Adjust as needed */
+  gap: 30px;
   margin-top: 1rem;
+  grid-auto-rows: minmax(430px, auto); /* Adjust 500px based on your design */
 }
-
-
 
 
 /* Styling card */
@@ -142,14 +18,15 @@ td a:hover{
 .card-css {
   box-shadow: 0 .3rem .8rem rgba(0, 0, 0, 0.2);
   border: 2px solid var(--sky-mist);
-  padding:1rem;
+  padding: 1rem;
   border-radius: 12px;
-  transition: transform 0.3s ease;
-  
-  min-height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 380px;
   margin: auto;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Important! */
 }
 
 
@@ -197,6 +74,36 @@ margin-left: 10px;
 
 }
 
+.toggle-includes-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid var(--storm-gray);
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--storm-gray);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toggle-includes-btn:hover {
+  background-color: var(--storm-gray);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.includes-list {
+  margin-top: -14px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.includes-list.show {
+  max-height: 500px; /* Enough height to contain the whole list */
+  opacity: 1;
+}
+
 
 /* ****************** Styling li******************************* */
  .spaced-list li {
@@ -229,6 +136,9 @@ margin-left: 10px;
   color: white;
   
 }
+
+
+
 /* Resonponsiveness */
 /* Small screens (phones: <576px) */
 @media (max-width: 575.98px) {
