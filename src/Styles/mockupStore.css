@@ -1,0 +1,119 @@
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+
+
+/* ****************************************Mockuo Store Section **************************************** */
+.mockup-store-section{
+ padding-top: 2rem;
+  padding-bottom: 4rem;
+  
+  
+}
+
+.store-title{
+  color: var(--midnight-black);
+  font-size: 2.5rem;
+ font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+}
+.header-line{
+  border-bottom: 2px solid var(--charcoal-shadow);
+}
+.header-line th{
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: var(--charcoal-shadow);
+  padding-bottom: 1rem;
+}
+
+.store-para{
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: var(--storm-gray);
+
+}
+th,td{
+  background-color: #f8f8f8 !important;
+}
+tr td{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--storm-gray);
+  
+
+}
+.bold-row{
+  color: var(--charcoal-shadow); 
+  font-weight: 600;
+  
+}
+td a{
+  text-decoration: none;
+  color: var(--sky-mist);
+}
+td a:hover{
+  text-decoration: underline;
+}
+
+
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+  .store-title{
+    font-size: 1.8rem;
+  }
+ .store-para{
+  font-size: .9rem;
+ }
+ .header-line th{
+  font-size: 1rem;
+  padding-bottom: 10px;
+ }
+ tr td{
+  font-size: .8rem;
+ }
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .store-para{
+  font-size: 1.2rem;
+ }
+ .header-line th{
+  font-size: 1.9rem;
+  padding-bottom: 10px;
+ }
+ tr td{
+  font-size: 1.4rem;
+ }
+
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+ .store-para{
+  font-size: 1.2rem;
+ }
+ .header-line th{
+  font-size: 1.7rem;
+ }
+ tr td{
+  font-size: 1.3rem;
+ }
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+  
+}
+

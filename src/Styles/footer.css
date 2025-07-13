@@ -1,0 +1,62 @@
+:root {
+    --Main-Heading : #000000;
+    --second-Heading : #1E1E1E;
+    --client-title : #757575;
+    --client-desrp : #B3B3B3;
+    --bg-color :  #ffffff;
+    --client-border : #D9D9D9;
+
+}
+/* Footer  */
+.footer {
+    background-color: #575757;
+    color: var(--bg-color);
+    padding-top: clamp(1.5rem,2vw,3.5rem);
+    padding-bottom: clamp(1.5rem,2vw,3.5rem);
+}
+
+.fHeading {
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin: clamp(0.5rem,1.5vw,1.5rem);
+    font-weight: 500;
+}
+
+.fdiv {
+    height: 100%;
+}
+.fline {
+    border: 0.1rem solid #ffffff;
+    width: 50%;
+    margin: clamp(0.5rem,1.5vw,1.5rem);
+}
+
+.fcontents{
+    font-size: clamp(0.9rem,1.2vw,1.3rem);
+    list-style: none;
+    color: var(--bg-color);
+}
+.fanchor {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+   
+}
+
+.fsignup-input{
+    padding: clamp(0.1rem,0.6vw,0.3rem);
+}
+
+.footer-btn {
+    background-color: var(--bg-color);
+    color: var(--Main-Heading);
+    border-radius: 0rem;
+    font-size: clamp(1rem,1vw,2rem);
+}
+
+.footer-btn:hover{
+    background-color: var(--bg-color);
+    color: var(--Main-Heading);
+}
+
+
+

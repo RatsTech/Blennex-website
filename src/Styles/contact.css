@@ -1,0 +1,79 @@
+/* Contact us  */
+.contact{
+   
+    padding: clamp(1rem,2vw,3rem);
+}
+
+.cheading{
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    margin-bottom: clamp(0.8rem,2vw,2rem);
+    color: #4A4849;
+
+}
+.ctext{
+    font-size: clamp(0.6rem, 1.4vw, 1.2rem);
+    color : #4A4849;
+}
+
+.group label {
+    width: 5.2rem;
+    font-size: clamp(1rem,2vw,1.2rem);
+    margin-bottom: clamp(0.4rem,1vw,0.8rem);
+    margin-top: clamp(0.4rem,1vw,0.8rem);
+}
+
+.address {
+    margin-bottom: clamp(0.8rem,2vw,1.2rem);
+}
+
+.cf-btn{
+    background-color: #97D8E8;
+    color: var(--bg-color);
+    width: 45%;
+    border: none;
+    font-size: clamp(1.2rem,2vw,1.5rem);
+    border-radius: 2rem;
+}
+
+.cf-btn:hover {
+    color: #97D8E8;
+    background-color: var(--bg-color);
+}
+.cf-btn:active {
+    color: #97D8E8;
+    background-color: var(--bg-color) !important;
+}
+
+
+
+
+    
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+.cheading{
+    text-align: center;
+}
+.ctext{
+    text-align: center;
+    padding-left:10px ;
+    padding-right: 10px;
+    font-size: 12px;
+}
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+} */
+
+/* Large screens (768px to 1199.98px) */
+/* @media (min-width: 768px) and (max-width: 1199.98px) {
+
+} */
+
+/* Extra-large screens (1200px and above) */
+/* @media (min-width: 1200px) {
+  
+} */
