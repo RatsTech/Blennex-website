@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Blennex-website/static/css/main.7d41df5d.css",
+    "main.js": "/Blennex-website/static/js/main.bb415d83.js",
+    "static/js/453.597f5e7a.chunk.js": "/Blennex-website/static/js/453.597f5e7a.chunk.js",
+    "static/media/cat.jpg": "/Blennex-website/static/media/cat.e91c841a0c8cf00ffa4a.jpg",
+    "static/media/La_nat U ral Serum mockup and label.png": "/Blennex-website/static/media/La_nat U ral Serum mockup and label.1843c74bd6bba3920c99.png",
+    "static/media/Me time branding logo and packaging (2).png": "/Blennex-website/static/media/Me time branding logo and packaging (2).fbee4e37565cd3f0fdc0.png",
+    "static/media/Kerazul Skincare line.png": "/Blennex-website/static/media/Kerazul Skincare line.6b279b6a9dfeb7c6a2d5.png",
+    "static/media/Collection Mockup 2.png": "/Blennex-website/static/media/Collection Mockup 2.6f0ded3f0ec0b64af11a.png",
+    "static/media/Opera 80 Skincare product line (1).png": "/Blennex-website/static/media/Opera 80 Skincare product line (1).e206cb92ae83301b43f6.png",
+    "static/media/Laskin label design.png": "/Blennex-website/static/media/Laskin label design.96b09b8aad28adf533df.png",
+    "static/media/Ligh breeze candle product line.jpg": "/Blennex-website/static/media/Ligh breeze candle product line.e5c3ccd87329f56715ab.jpg",
+    "static/media/logo.png": "/Blennex-website/static/media/logo.c4350e198ba6cc05a424.png",
+    "static/media/logo-light.png": "/Blennex-website/static/media/logo-light.20f4c77122bb0cc9fc4e.png",
+    "static/media/logo-dark.png": "/Blennex-website/static/media/logo-dark.cf03cf3cb6e196ea36a3.png",
+    "index.html": "/Blennex-website/index.html",
+    "main.7d41df5d.css.map": "/Blennex-website/static/css/main.7d41df5d.css.map",
+    "main.bb415d83.js.map": "/Blennex-website/static/js/main.bb415d83.js.map",
+    "453.597f5e7a.chunk.js.map": "/Blennex-website/static/js/453.597f5e7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d41df5d.css",
+    "static/js/main.bb415d83.js"
+  ]
+}
