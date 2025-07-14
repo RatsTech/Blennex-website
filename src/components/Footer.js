@@ -1,17 +1,18 @@
 import React from 'react'
 import '../Styles/footer.css'
+import logo from '../assets/images/logo-dark.png'
 
 function Footer() {
   return (
    <footer className="footer">
-  <div className="footer d-flex justify-content-center align-items-center">
+  <div className="footer d-flex justify-content-around">
     <div className="container m-0 w-100">
-      <div className="row g-3">
-        <div className="quickLinks fdiv col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
+      <div className="row g-6">
+        <div className="quickLinks fdiv col-6 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
           <hr className="fline mb-0" />
           <h4 className="fHeading">Quick Links</h4>
           <div className="footerLinks w-100">
-            <ul>
+            <ul class="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                 Home </a>
@@ -48,11 +49,11 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="quickLinks fdiv col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
+        <div className="quickLinks fdiv col-6 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
           <hr className="fline mb-0" />
           <h4 className="fHeading">Services</h4>
           <div className="footerLinks w-100">
-            <ul>
+            <ul class="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                   Graphic Design
@@ -84,11 +85,11 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="quickLinks fdiv col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
+        <div className="quickLinks fdiv col-6 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center flex-column">
           <hr className="fline mb-0" />
           <h4 className="fHeading">Address</h4>
           <div className="footerLinks w-100">
-            <ul>
+            <ul class="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                 Kuza bandi Swat
@@ -117,11 +118,11 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="footercontact fdiv col-12 col-sm-6 col-md-6 col-lg-3 d-flex flex-column align-items-start">
+        <div className="footercontact fdiv col-6 col-sm-6 col-md-6 col-lg-3 d-flex flex-column justtify-content-center">
           <hr className="fline mb-0" />
           <h4 className="fHeading">Connect</h4>
           <div className="fcontacts">
-            <ul>
+            <ul class="footerul">
               <li className="fcontents">
                 <a href="" className="fanchor">
                 Behance
@@ -153,17 +154,20 @@ function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="fsignup-container d-flex flex-wrap align-items-start">
-              <input type="text" className="fsignup-input ms-4 mb-3" />
-              <button className="footer-btn btn btn-primary text-uppercase fw-semibold ms-4">
-                sign up
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="d-flex justify-content-around align-items-center">
+  <p class="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank">Ratstech</a>. All rights reserved.</p>
+  <img
+        id="navbarLogo"
+        className="nav-logo"
+        src={logo}
+        alt="Blennex Design Logo"
+      />
+    </div>
 </footer>
 
   )

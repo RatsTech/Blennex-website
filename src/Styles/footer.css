@@ -5,14 +5,15 @@
     --client-desrp : #B3B3B3;
     --bg-color :  #ffffff;
     --client-border : #D9D9D9;
+    --midnight-black: #232323;
 
 }
 /* Footer  */
 .footer {
-    background-color: #575757;
+    background-color:var(--midnight-black);
     color: var(--bg-color);
     padding-top: clamp(1.5rem,2vw,3.5rem);
-    padding-bottom: clamp(1.5rem,2vw,3.5rem);
+    padding-bottom: clamp(1.5rem,2vw,3rem);
 }
 
 .fHeading {
@@ -35,28 +36,28 @@
     list-style: none;
     color: var(--bg-color);
 }
+
+.fcontents:hover{
+    transform: scale(0.99);
+    color: var(--client-title);
+}
 .fanchor {
     text-decoration: none;
     color: #ffffff;
     font-weight: 400;
    
 }
-
-.fsignup-input{
-    padding: clamp(0.1rem,0.6vw,0.3rem);
+.footerul {
+    padding-left: clamp(0.5rem,1.5vw,1.5rem);
+}
+.footerp {
+    text-align: center;
+    font-size: clamp(0.9rem,1.2vw,1.3rem);
+    color: var(--bg-color);
 }
 
-.footer-btn {
-    background-color: var(--bg-color);
-    color: var(--Main-Heading);
-    border-radius: 0rem;
-    font-size: clamp(1rem,1vw,2rem);
-}
 
-.footer-btn:hover{
-    background-color: var(--bg-color);
-    color: var(--Main-Heading);
-}
+
 
 
 
