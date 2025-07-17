@@ -5,7 +5,7 @@ import PackageCard from './PackageCard.js'
 function BestPlans() {
   return (
   <section className="best-plan-section mt-5">
-  <div className="px-2 pt-4 py-3 best-plan-container ">
+  <div className="px-2 pt-4 py-5 best-plan-container ">
     <h2
       className="text-center pt-1 heading-txt"
       data-aos="fade-up"

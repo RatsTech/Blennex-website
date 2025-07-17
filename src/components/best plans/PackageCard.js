@@ -1,21 +1,21 @@
 import React, {useRef,useState} from 'react'
 
 function PackageCard({title, description, price , includes}) {
-  const includesRef = useRef(null);
-  const [isShown,setIsShown] = useState(false);
-  const firstThree = includes.slice(0,2);
-  const remainingList = includes.slice(2);
-  const remaining = remainingList.length;
+  // const includesRef = useRef(null);
+  // const [isShown,setIsShown] = useState(false);
+  // const firstThree = includes.slice(0,2);
+  // const remainingList = includes.slice(2);
+  // const remaining = remainingList.length;
 
   
 
-const toggleIncludes = () => {
-  if (includesRef.current) {
-    includesRef.current.classList.toggle("show");
-    setIsShown(prv=>!prv);
+// const toggleIncludes = () => {
+//   if (includesRef.current) {
+//     includesRef.current.classList.toggle("show");
+//     setIsShown(prv=>!prv);
 
-  }
-};
+//   }
+// };
 
 
   return (
@@ -25,7 +25,7 @@ const toggleIncludes = () => {
         data-aos-duration={1000}
         data-aos-delay={100}
       >
-        <div className="card card-css h-100 best-plan-card">
+        <div className="card-css h-100 best-plan-card">
           <div className="">
             <h4 className="fw-bold">{title}</h4>
             <p className=" text-muted mb-4">
@@ -54,23 +54,11 @@ const toggleIncludes = () => {
           </div>
           <ul className='list-unstyled ms-0  spaced-list'>
             {
-              firstThree.map((item,index)=>(<li key={index+1}><span>•</span> {item}</li>))
+              includes.map((item,index)=>(<li key={index+1}><span>•</span> {item}</li>))
             }
           </ul>
         
-        <ul ref={includesRef} className="includes-list list-unstyled ms-0 mb-4 spaced-list">
-          {remainingList.map((item, index) => (
-            <li key={index}>
-              <span>•</span> {item}
-            </li>
-          ))}
-        </ul>
-            <button
-                className="btn toggle-includes-btn mb-3 "
-                onClick={toggleIncludes}
-              >
-                {isShown?'See Less':`See ${remaining}+ More`}
-          </button>
+     
 
           <div className="d-flex justify-content-around  small mb-4">
             <div>
