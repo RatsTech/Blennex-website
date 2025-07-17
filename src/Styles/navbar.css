@@ -64,7 +64,6 @@ html, body {
   font-weight: 400;
  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
  transition: color .5s ease-in-out;
-
 }
 .portfolio-link{
   background-color: transparent;
