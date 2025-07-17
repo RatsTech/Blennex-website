@@ -12,24 +12,12 @@ function Navbar() {
   <header className="header px-md-5 px-0">
   <nav id="myNavbar" className="navbar navbar-expand-lg fixed-top">
     <div className="container-fluid px-3 px-md-5 css-nav-container">
-
       <img
         id="navbarLogo"
         className="nav-logo"
         src={logo}
         alt="Blennex Design Logo"
       />
-      <button
-        className="navbar-toggler "
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
       <div
         className="navigation collapse navbar-collapse ms-lg-5 ms-0 css-nav-link-container"
         id="navbarNav"
@@ -103,6 +91,17 @@ function Navbar() {
           </ul>
         </div>
       </div>
+        <button
+        className="navbar-toggler "
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
     </div>
   </nav>
 </header>

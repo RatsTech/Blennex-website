@@ -64,6 +64,7 @@ html, body {
   font-weight: 400;
  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
  transition: color .5s ease-in-out;
+
 }
 .portfolio-link{
   background-color: transparent;
@@ -251,11 +252,116 @@ html, body {
   }
 }
 
-
-
-
-
 .navigation{
   justify-content: space-between;
  
 }
+
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--midnight-black);
+    z-index: 1050;
+    padding: 2rem 2.5rem;
+    overflow-y: auto;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Close “×” button on right */
+  .navbar-toggler.collapsed::before {
+    display: none;
+  }
+
+  #navbarNav.show ~ .navbar-toggler::before {
+    content: "×";
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1102;
+  }
+
+  #navbarNav.show ~ .navbar-toggler .navbar-toggler-icon {
+    display: none;
+  }
+
+  /* Navigation menu styles */
+  .navbar-collapse.show .navbar-nav.css-breadcrumb-nav {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+    align-items: flex-start !important;
+  }
+
+  .navbar-collapse.show .nav-item {
+    width: 100%;
+    border-bottom: 0.9px solid #ffffff;
+    padding-bottom: 0.4rem;
+    text-align: left !important;
+  }
+
+  .navbar-collapse.show .nav-link,
+  .navbar-collapse.show .dropdown-item {
+    font-size: 1.3rem;
+    align-self: flex-start;
+    width: 100%;
+    text-align: left !important;
+  }
+  .navbar-collapse.show .nav-link{
+    color: #F6F8FB !important;
+  }
+  .navbar-collapse.show .nav-link:hover {
+    transform: scale(0.99); /* or your hover color */
+    border-radius: 10px;
+  }
+  .navbar-collapse.show .dropdown-menu {
+    background-color: #F6F8FB;
+    color: var(--midnight-black) !important;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse.show .dropdown-item:hover {
+    border-radius: 12px !important;
+    color: var(--sky-mist) !important;
+    background-color: #ffffff !important;
+    cursor: default;
+  }
+
+  .navbar-collapse.show .breadcrumb-separator {
+    display: none;
+  }
+
+  .navbar-collapse.show > div:last-child {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar-collapse.show .navbar-nav{
+    width: 100%;
+  }
+  .navbar-collapse.show .portfolio-link {
+    background-color: #F6F8FB;
+    color: var(--midnight-black);
+  }
+  .navbar-collapse.show .css-portfolio-link-blue,
+  .navbar-collapse.show .portfolio-link {
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-align: center !important; /* Buttons remain centered */
+  }
+}
+
