@@ -160,7 +160,7 @@ function Footer() {
     </div>
   </div>
   <div class="d-flex justify-content-around align-items-center">
-  <p class="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank">Ratstech</a>. All rights reserved.</p>
+  <p class="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" style={{textDecoration:'none'}}>Ratstech</a>. All rights reserved.</p>
   <img
         id="navbarLogo"
         className="nav-logo"

@@ -29,7 +29,7 @@ function Home({navbar}) {
     <WhyClientsLove/>
     <Contact/>
     <Footer/>
-    <ContactForm/>
+    
  
   </>
   );

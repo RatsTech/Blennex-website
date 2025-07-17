@@ -25,7 +25,7 @@ function PackageCard({title, description, price , includes}) {
         data-aos-duration={1000}
         data-aos-delay={100}
       >
-        <div className="card card-css h-100 best-plan-card">
+        <div className="card-css h-100 best-plan-card">
           <div className="">
             <h4 className="fw-bold">{title}</h4>
             <p className=" text-muted mb-4">

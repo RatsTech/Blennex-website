@@ -3,9 +3,9 @@
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  
   margin-top: 1rem;
-  grid-auto-rows: minmax(430px, auto); /* Adjust 500px based on your design */
+  grid-auto-rows: minmax(500px, auto); /* Adjust 500px based on your design */
 }
 
 
@@ -21,7 +21,7 @@
   padding: 1rem;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 380px;
+  max-width: 430px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
 
 .card-css:hover {
 
-   transform: translateY(-5px) scale(1.18);
+   transform: translateY(-5px) scale(1.15);
   border-color: var(--storm-gray);
 }
 
