@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { initAOS } from "./Scripts/aosAnimation.js";
-import { initNavbarScroll } from './Scripts/navbarScroll.js'; //
+import { initNavbarScroll } from './Scripts/navbarScroll.js';
 
 import Preloader from "./components/Preloader.js";
 import Home from "./pages/Home.js";
@@ -13,21 +13,19 @@ function App() {
 
   useEffect(() => {
     initAOS();
-    
-    // Initialize navbar scroll handler
-    const cleanup = initNavbarScroll(); // 
+    const cleanup = initNavbarScroll();
 
     const timer = setTimeout(() => {
       setLoading(false);
     }, 4000);
 
-    // Cleanup scroll listener on unmount
     return () => {
       clearTimeout(timer);
-      cleanup(); // 
+      cleanup();
     };
   }, []);
-  const navbar = <Navbar/>
+
+  const navbar = <Navbar />;
 
   return (
     <>
@@ -35,12 +33,12 @@ function App() {
         <Preloader />
       ) : (
         <div className="App">
-          <Router>
+          <BrowserRouter basename="/Blennex-website">
             <Routes>
-              <Route path="/" element={<Home navbar = {navbar} />} />
+              <Route path="/" element={<Home navbar={navbar} />} />
               <Route path="/contact" element={<ContactForm navbar={navbar} />} />
             </Routes>
-          </Router>
+          </BrowserRouter>
         </div>
       )}
     </>

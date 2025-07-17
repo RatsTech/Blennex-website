@@ -12,7 +12,7 @@ function Footer() {
           <hr className="fline mb-0" />
           <h4 className="fHeading">Quick Links</h4>
           <div className="footerLinks w-100">
-            <ul class="footerul">
+            <ul className="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                 Home </a>
@@ -53,7 +53,7 @@ function Footer() {
           <hr className="fline mb-0" />
           <h4 className="fHeading">Services</h4>
           <div className="footerLinks w-100">
-            <ul class="footerul">
+            <ul className="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                   Graphic Design
@@ -89,7 +89,7 @@ function Footer() {
           <hr className="fline mb-0" />
           <h4 className="fHeading">Address</h4>
           <div className="footerLinks w-100">
-            <ul class="footerul">
+            <ul className="footerul">
               <li className="fcontents">
                 <a href="#" className="fanchor">
                 Kuza bandi Swat
@@ -122,7 +122,7 @@ function Footer() {
           <hr className="fline mb-0" />
           <h4 className="fHeading">Connect</h4>
           <div className="fcontacts">
-            <ul class="footerul">
+            <ul className="footerul">
               <li className="fcontents">
                 <a href="" className="fanchor">
                 Behance
@@ -159,8 +159,8 @@ function Footer() {
       </div>
     </div>
   </div>
-  <div class="d-flex justify-content-around align-items-center">
-  <p class="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" style={{textDecoration:'none'}}>Ratstech</a>. All rights reserved.</p>
+  <div className="d-flex justify-content-around align-items-center">
+  <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" style={{textDecoration:'none'}}>Ratstech</a>. All rights reserved.</p>
   <img
         id="navbarLogo"
         className="nav-logo"

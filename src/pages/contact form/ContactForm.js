@@ -95,6 +95,7 @@ function ContactForm({navbar}) {
         value={name}
         onChange={e => setName(e.target.value)}
         required
+        autoComplete='name'
       />
        {name === '' && (
         <p className="error-text">*Please fill out this field.</p>
@@ -108,6 +109,7 @@ function ContactForm({navbar}) {
         value={email}
         onChange={e => setEmail(e.target.value)}
         required
+        autoComplete='email'
       />
       {/* only show when invalid */}
       {email === '' && (
@@ -124,6 +126,7 @@ function ContactForm({navbar}) {
         placeholder="Company / Brand Name (Optional)"
         value={company}
         onChange={e => setCompany(e.target.value)}
+        autoComplete='organization'
       />
     </div>
   </div>
@@ -136,6 +139,7 @@ function ContactForm({navbar}) {
         value={message}
         onChange={e => setMessage(e.target.value)}
         required
+        autoComplete='off'
       />
     </div>
   </div>

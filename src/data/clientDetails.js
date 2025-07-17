@@ -8,35 +8,35 @@ export const  clientDetails = [
         clientInfo: "Description of the client"
     },
       {
-        id:1,
+        id:2,
         img:img1,
         quote: "Best Work",
         clientTitle:"Title",
         clientInfo: "Description of the client"
     },
       {
-        id:1,
+        id:3,
         img:img1,
         quote: "Best Work",
         clientTitle:"Title",
         clientInfo: "Description of the client"
     },
       {
-        id:1,
+        id:4,
         img:img1,
         quote: "Best Work",
         clientTitle:"Title",
         clientInfo: "Description of the client"
     },
       {
-        id:1,
+        id:5,
         img:img1,
         quote: "Best Work",
         clientTitle:"Title",
         clientInfo: "Description of the client"
     },
       {
-        id:1,
+        id:6,
         img:img1,
         quote: "Best Work",
         clientTitle:"Title",
