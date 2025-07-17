@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Blennex-website/static/css/main.c26ef612.css",
-    "main.js": "/Blennex-website/static/js/main.d2b8a322.js",
+    "main.css": "/Blennex-website/static/css/main.054e627e.css",
+    "main.js": "/Blennex-website/static/js/main.1d3c1123.js",
     "static/js/453.597f5e7a.chunk.js": "/Blennex-website/static/js/453.597f5e7a.chunk.js",
     "static/media/cat.jpg": "/Blennex-website/static/media/cat.e91c841a0c8cf00ffa4a.jpg",
     "static/media/La_nat U ral Serum mockup and label.png": "/Blennex-website/static/media/La_nat U ral Serum mockup and label.1843c74bd6bba3920c99.png",
@@ -17,12 +17,12 @@
     "static/media/instagram.png": "/Blennex-website/static/media/instagram.edb90ecc706a7a25542b.png",
     "static/media/pinterest.png": "/Blennex-website/static/media/pinterest.75ff25a1305fc6b55649.png",
     "index.html": "/Blennex-website/index.html",
-    "main.c26ef612.css.map": "/Blennex-website/static/css/main.c26ef612.css.map",
-    "main.d2b8a322.js.map": "/Blennex-website/static/js/main.d2b8a322.js.map",
+    "main.054e627e.css.map": "/Blennex-website/static/css/main.054e627e.css.map",
+    "main.1d3c1123.js.map": "/Blennex-website/static/js/main.1d3c1123.js.map",
     "453.597f5e7a.chunk.js.map": "/Blennex-website/static/js/453.597f5e7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c26ef612.css",
-    "static/js/main.d2b8a322.js"
+    "static/css/main.054e627e.css",
+    "static/js/main.1d3c1123.js"
   ]
 }
