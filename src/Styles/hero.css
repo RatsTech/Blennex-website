@@ -65,7 +65,8 @@ color: var(--charcoal-shadow);
 
 .organic-ripple-button {
   position: relative;
-  padding: 12px 24px;
+  padding: 15px 25px !important;
+  font-size: 1rem !important;
   background-color: #007bff;
   color: white;
   border: none;
@@ -79,16 +80,21 @@ color: var(--charcoal-shadow);
 /* Ripple base */
 .bton{
   
-  animation: zoomInOut 1.5s infinite;
-  transition: transform 0.2s;
+  
+  animation: zoomInOut 2.5s infinite;
+  transition: transform 0.7s;
 
 }
 @keyframes zoomInOut {
   0%   { transform: scale(1); }
-  50%  { transform: scale(1.2); }
+  50%  { transform: scale(1.15); }
   100% { transform: scale(1); }
 }
+.bton:hover {
+  animation: none;
 
+
+}
 
 
 

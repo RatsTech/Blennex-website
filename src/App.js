@@ -1,50 +1,49 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { initAOS } from "./Scripts/aosAnimation.js";
-import ProudlyDesigned from "./components/ProudlyDesigned.js";
-import Portfolio from "./components/Portfolio.js";
-import Services from "./components/Services/Services.js";
-import MockupStore from "./components/mockup store/MockupStore.js";
-import BestPlans from "./components/best plans/BestPlans.js";
-import WhyClientsLove from "./components/Why Client Love/WhyClientsLove.js";
-import Contact from "./components/Contact.js";
-import Footer from "./components/Footer.js";
+import { initNavbarScroll } from './Scripts/navbarScroll.js'; //
+
 import Preloader from "./components/Preloader.js";
+import Home from "./pages/Home.js";
+import ContactForm from "./pages/contact form/ContactForm.js";
+import Navbar from "./components/Navbar.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     initAOS();
-    const timer = setTimeout(()=>{
+    
+    // Initialize navbar scroll handler
+    const cleanup = initNavbarScroll(); // 
+
+    const timer = setTimeout(() => {
       setLoading(false);
-    },4000)
+    }, 4000);
 
-    return ()=> clearTimeout(timer)
+    // Cleanup scroll listener on unmount
+    return () => {
+      clearTimeout(timer);
+      cleanup(); // 
+    };
   }, []);
-
+  const navbar = <Navbar/>
 
   return (
-  <>
-  {
-    loading? (<Preloader/>):(
+    <>
+      {loading ? (
+        <Preloader />
+      ) : (
         <div className="App">
-    <Navbar/>
-    <Hero/>
-    <ProudlyDesigned/>
-    <Portfolio/>
-    <Services/>
-    <MockupStore/>
-    <BestPlans/>
-    <WhyClientsLove/>
-    <Contact/>
-    <Footer/>
-    </div>
-    )
-  }
-  </>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home navbar = {navbar} />} />
+              <Route path="/contact" element={<ContactForm navbar={navbar} />} />
+            </Routes>
+          </Router>
+        </div>
+      )}
+    </>
   );
 }
 

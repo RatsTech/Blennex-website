@@ -34,10 +34,10 @@ function Navbar() {
         className="navigation collapse navbar-collapse ms-lg-5 ms-0 css-nav-link-container"
         id="navbarNav"
       >
-        <ul className="navbar-nav d-flex align-items-center css-breadcrumb-nav gap-4">
+        <ul className="navbar-nav d-flex align-items-center css-breadcrumb-nav gap-5">
           <li className="nav-item">
             <a className="nav-link active css-nav-link" href="#">
-              Work
+              Agency
             </a>
           </li>
           <li className="nav-item dropdown">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Styles/hero.css'
 function Hero() {
   return (
@@ -39,12 +40,14 @@ function Hero() {
     data-aos-easing="ease-out-back"
   >
     <div className="ripple-container">
-      <button className="btn bton rounded-pill py-2 px-4 organic-ripple-button">
-        New Projects?
+      <Link to="/contact">
+        <button className="btn bton rounded-pill py-2 px-4 organic-ripple-button">
+        New Project?
         <span className="ripple ripple1" />
         <span className="ripple ripple2" />
         <span className="ripple ripple3" />
       </button>
+      </Link>
     </div>
   </div>
 </section>

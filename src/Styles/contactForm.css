@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      
+    }
+
+    .form-container {
+      width: 100%;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 5rem 4rem;
+      margin-top: 150px;
+     
+    }
+
+   .form-container h2 {
+      font-size: 5rem;
+      color: var(--charcoal-shadow);
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+      font-weight:700;
+    }
+
+    .form-container p {
+      font-size: 2.5rem;
+      color: var(--sky-mist); /* Light blue color */
+      margin-bottom: 100px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
+
+    .interest-section {
+      margin-top: 20px;
+    }
+   .interest-section p {
+      font-size: 2.5rem;
+      color: var(--charcoal-shadow);
+      margin-bottom: 20px;
+      
+    }
+
+    .interest-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 80%;
+    }
+
+    .interest-button {
+      padding: .7rem 1.6rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .interest-button:hover {
+      background-color: var(--midnight-black);
+      color: #f9f9f9;
+    }
+
+    .interest-button.active {
+      background-color: #5cb8d8; /* Light blue color */
+      color: white;
+      border-color: #5cb8d8;
+    }
+
+    .input-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      
+    }
+  .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 50px;
+}
+
+/* .row.full-width {
+ 
+} */
+
+.field-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-input {
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem 0.25rem;   /* top/right/bottom */
+  border: none;
+  border-bottom: 2px solid var(--charcoal-shadow);
+  background: transparent;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--storm-gray);
+  opacity: 0.4;
+  font-size: 1.1rem;
+  
+  transform: translateY(0.2rem);  /* nudge placeholder down */
+  
+  position: relative;
+  top: -0.35rem;   /* push it down (into the padding) */
+}
+
+/* Textarea tweaks */
+.textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+/* Error text under input */
+.error-text {
+  color: red !important;
+  font-size: .9rem !important;
+ letter-spacing: px !important;
+  font-weight: 500 ;
+}
+
+/* Button row: right aligned */
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button{
+    background-color: #97D8E8;
+    color: var(--bg-color);
+    padding: .6rem 2rem !important;
+    border: none;
+    font-size: clamp(1rem,2vw,1.3rem);
+    border-radius: 2rem;
+}
+
+.submit-button:hover {
+      background-color: var(--midnight-black);
+      color: #f9f9f9;
+}
+.submit-button:active {
+    color: #97D8E8;
+    background-color: var(--bg-color) !important;
+}
+
+
+/* under contactForm.css */
+
+.social-section {
+  margin-top: 6rem;
+}
+
+.social-hr {
+  border: none;
+  height: 2px;
+  background-color: var(--midnight-black);
+ 
+}
+
+.social-label {
+  font-size: 1rem !important;
+  color: var(--midnight-black) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0px;
+ 
+ 
+}
+
+
+
+.social-icons img {
+  width: 1.5rem;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  .row.two-cols {
+    grid-template-columns: 1fr;
+  }
+}

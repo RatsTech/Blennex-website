@@ -1,10 +1,14 @@
 // src/scripts/navbarScroll.js
-import lightLogo from '../assets/images/logo-light.png'
-import darkLogo from '../assets/images/logo-dark.png'
+import lightLogo from '../assets/images/logo-light.png';
+import darkLogo from '../assets/images/logo-dark.png';
+
 export function initNavbarScroll() {
   const handleScroll = () => {
     const navbar = document.getElementById('myNavbar');
     const logo = document.getElementById('navbarLogo');
+
+    //  Add null checks to avoid errors on pages that don't include these elements
+    if (!navbar || !logo) return;
 
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');

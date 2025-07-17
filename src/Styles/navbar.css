@@ -8,7 +8,7 @@
 }
 
 .nav-logo {
-  height: 70px;
+  height: 55px;
   transition: height 0.3s ease;
 }
 html, body {
@@ -41,7 +41,7 @@ html, body {
 
   .navbar.scrolled  .css-nav-link{
     color: #F6F8FB !important;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 .navbar.scrolled .portfolio-link{
   color: #ffffff;
@@ -54,24 +54,26 @@ html, body {
  color: #F6F8FB;
 }
 .css-nav-link-container{
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-right:1.3rem;
 }
 .css-nav-link {
-  font-size: 1.1rem;
+  font-size: 1.rem;
   font-family: sans-serif;
   color: var(--midnight-black);
-  font-weight: 500;
- transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+  font-weight: 400;
+ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+ transition: color .5s ease-in-out;
 }
 .portfolio-link{
   background-color: transparent;
   padding: 8px 20px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--midnight-black); /* Or any text color */
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  transition: all .5s ease-in-out;
 }
 .portfolio-link:hover{
  background-color: transparent;
@@ -85,9 +87,9 @@ html, body {
 .css-portfolio-link{
   font-family: sans-serif;
   color: #F6F8FB;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: var(--storm-gray);
-  padding: .5rem 1.2rem .5rem 1.2rem;
+  padding: .3rem 1rem .3rem 1rem;
   border-radius: 20px;
 }
 
@@ -99,27 +101,28 @@ html, body {
 .css-portfolio-link-blue{
   font-family: sans-serif;
   color: #F6F8FB;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: var(--sky-mist);
   padding: 8px 20px 8px 20px;
   border-radius: 20px;
 }
 .css-portfolio-link-blue:hover{
   background-color: #F6F8FB;
-  color: var(--sky-mist);
+  color: var(--midnight-black);
 }
 
 
 
 .breadcrumb-separator {
   color: var(--midnight-black);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-left: 4px; /* small spacing between text and arrow */
   display: inline-block;
   user-select: none;
   padding-left: 5px;
    transition: transform 0.4s ease-in-out; /* Material Design-style easing */
+   transition: color .5s ease-in-out;
 }
 
 
