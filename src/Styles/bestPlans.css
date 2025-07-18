@@ -161,6 +161,12 @@ margin-left: 10px;
 
 /* Medium screens (tablets: 576px to 767.98px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+  .card-css:hover {
+
+   transform: translateY(-5px) scale(0.99);
+  border-color: var(--storm-gray);
+}
   .plans-button {
     font-size: 1.4rem;
     padding: 0.45rem 2rem;
@@ -173,6 +179,7 @@ margin-left: 10px;
   width: 20px;
   height: 20px;
 }
+
 
 }
 

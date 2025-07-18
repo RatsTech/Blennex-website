@@ -52,10 +52,13 @@
 }
 .footerp {
     text-align: center;
-    font-size: clamp(0.9rem,1.2vw,1.3rem);
+    font-size: clamp(0.5rem,1.2vw,.9em);
     color: var(--bg-color);
 }
-
+.footerp a{
+    text-decoration: none;
+    color: var(--client-title);
+}
 
 
 

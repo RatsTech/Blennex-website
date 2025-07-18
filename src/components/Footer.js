@@ -160,12 +160,13 @@ function Footer() {
     </div>
   </div>
   <div className="d-flex justify-content-around align-items-center">
-  <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" style={{textDecoration:'none'}}>Ratstech</a>. All rights reserved.</p>
+  <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank">Ratstech</a>. All rights reserved.</p>
   <img
         id="navbarLogo"
         className="nav-logo"
         src={logo}
         alt="Blennex Design Logo"
+        href="#"
       />
     </div>
 </footer>
