@@ -5,7 +5,7 @@ import Client from './Client'
 
 function WhyClientsLove() {
   return (
-   <section className="WhyClientsLoveBlennex">
+   <section className="WhyClientsLoveBlennex" id="testimonials">
   <div className="clientsLoveContainer d-flex justify-content-center align-items-center">
     <div className="container cl-container m-0 p-0 w-100">
       <h2

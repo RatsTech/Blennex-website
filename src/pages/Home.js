@@ -9,7 +9,6 @@ import BestPlans from "../components/best plans/BestPlans.js";
 import WhyClientsLove from "../components/Why Client Love/WhyClientsLove.js";
 import Contact from "../components/Contact.js";
 import Footer from "../components/Footer.js";
-
 import ContactForm from "../pages/contact form/ContactForm.js";
 
 function Home({navbar}) {

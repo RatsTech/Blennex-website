@@ -5,7 +5,7 @@ import {storeContent} from '../../data/storeContent.js'
 
 function MockupStore() {
   return (
-<section className="mockup-store-section" data-aos="fade-up">
+<section className="mockup-store-section" data-aos="fade-up" id="mockup">
   <div
     className="container pt-3 mockup-store-back "
     data-aos="fade-up"

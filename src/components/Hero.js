@@ -4,7 +4,7 @@ import '../Styles/hero.css'
 function Hero() {
   return (
     
-<section className="hero px-md-5 py-5">
+<section className="hero px-md-5 py-5" id = "home">
   <div className="container-fluid css-hero-section">
     <h1
       data-aos="fade-up"
