@@ -5,7 +5,7 @@ import {rowOneImages,rowTwoImages} from '../data/sliderImages.js'
 
 function Portfolio() {
   return (
-   <section className="portfolio-section mt-1">
+   <section className="portfolio-section mt-1" id="work">
   {/* First row (scrolling left) */}
   <div className="mt-1">
     <h3

@@ -3,7 +3,7 @@ import '../Styles/contact.css'
 
 function Contact() {
   return (
-   <section className="contactUs">
+   <section className="contactUs" id="contactus">
   <div className="contact d-flex justify-content-center align-items-center">
     <div className="container m-0 p-0">
       <h2

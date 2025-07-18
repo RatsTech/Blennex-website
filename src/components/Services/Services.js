@@ -9,7 +9,7 @@ import IndividualService from './IndividualService.js'
 
 function Services() {
   return (
- <section className="three" data-aos="fade-up">
+ <section className="three" data-aos="fade-up" id="services">
   <div className="container-fluid ">
     <div className="our_work d-flex justify-content-center">
       <h1

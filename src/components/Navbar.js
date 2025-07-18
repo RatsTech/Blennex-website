@@ -1,4 +1,5 @@
 import React , {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import '../Styles/navbar.css'
 import logo from '../assets/images/logo-light.png'
 import {initNavbarScroll} from '../Scripts/navbarScroll.js'
@@ -24,54 +25,52 @@ function Navbar() {
       >
         <ul className="navbar-nav d-flex align-items-center css-breadcrumb-nav gap-5">
           <li className="nav-item">
-            <a className="nav-link active css-nav-link" href="#">
+            <a href="#work" className="nav-link active css-nav-link">
               Agency
             </a>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <a href="#services"
               className="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center"
-              href="#"
               role="button"
             >
               Services<span className="breadcrumb-separator ms-1">›</span>
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a className="dropdown-item" href="#">
+                <a href="#services" className="dropdown-item">
                   Graphic Designing
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a href="#services" className="dropdown-item">
                   UI/UX
                 </a>
               </li>
             </ul>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <a href="#packages"
               className="nav-link dropdown-toggle css-nav-link d-inline-flex align-items-center"
-              href="#"
               role="button"
             >
               Packages<span className="breadcrumb-separator ms-1">›</span>
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a className="dropdown-item" href="#">
+                <a href="#packages" className="dropdown-item" >
                   Starter
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a href="#packages" className="dropdown-item" >
                   Business
                 </a>
               </li>
             </ul>
           </li>
           <li className="nav-item">
-            <a className="nav-link css-nav-link" href="#">
+            <a className="nav-link css-nav-link" href="#mockup">
               Mockups
             </a>
           </li>
@@ -79,14 +78,16 @@ function Navbar() {
         <div>
           <ul className="navbar-nav gap-3">
             <li className="nav-item">
-              <a className="btn portfolio-link" href="#">
+              <a href="#work" className="btn portfolio-link">
                 Portfolio
               </a>
             </li>
             <li className="nav-item ">
+              <Link to="/contact">
               <button className="btn rounded-pill  css-portfolio-link-blue">
                 Contact
               </button>
+              </Link>
             </li>
           </ul>
         </div>

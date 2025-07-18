@@ -66,7 +66,7 @@ function ContactForm({navbar}) {
   return (
     <>
       {navbar}
-      <div className="form-container">
+      <div className="form-container" id="contactform">
         <h2 className="form-heading">Let's Create Something <br /> Remarkable Together</h2>
         <p>Have a project in mind?</p>
         <hr />
