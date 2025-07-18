@@ -32,7 +32,7 @@
 
 .card-css:hover {
 
-   transform: translateY(-5px) scale(1.15);
+   transform: translateY(-5px) scale(1.12);
   border-color: var(--storm-gray);
 }
 

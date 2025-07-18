@@ -33,7 +33,7 @@ function App() {
         <Preloader />
       ) : (
         <div className="App">
-          <BrowserRouter basename="/Blennex-website">
+          <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home navbar={navbar} />} />
               <Route path="/contact" element={<ContactForm navbar={navbar} />} />
