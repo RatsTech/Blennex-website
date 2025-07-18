@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Styles/footer.css'
 import logo from '../assets/images/logo-dark.png'
 
@@ -14,35 +15,35 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#home" className="fanchor">
                 Home </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#work" className="fanchor">
                 Work</a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#aboutus" className="fanchor">
                 About Us 
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#services" className="fanchor">
                 Services
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#testimonials" className="fanchor">
                 Client Testimonials
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#work" className="fanchor">
                 Portfolio
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#contactus" className="fanchor">
                 Contact Us
                 </a>
               </li>
@@ -55,31 +56,31 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#services" className="fanchor">
                   Graphic Design
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#services" className="fanchor">
                   UI/UX
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#services" className="fanchor">
                   Brand Identity
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#services" className="fanchor">
                   Packaging
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor" >
+                <a href="#services" className="fanchor" >
                 Brand Identity &amp; Labels</a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor" >
+                <a href="#services" className="fanchor" >
                 3D Product Mockups </a>
               </li>
             </ul>
@@ -91,27 +92,27 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#Kuza bandi Swat" className="fanchor">
                 Kuza bandi Swat
                 </a>
               </li>
               <li className="fcontents">
-              <a href="#" className="fanchor">
+              <a href="#KPK Pakistan" className="fanchor">
                 KPK Pakistan
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#+9232-9228145" className="fanchor">
                 +9232-9228145
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
-                Email
+                <a href="#blennexofficial@gmail.com" className="fanchor">
+                blennexofficial@gmail.com
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
+                <a href="#home" className="fanchor">
                 www.blennexdesign.com
                 </a>
               </li>
@@ -124,35 +125,37 @@ function Footer() {
           <div className="fcontacts">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="" className="fanchor">
+                <a href="https://www.behance.net/kashifkhandesign"target="_blank" className="fanchor">
                 Behance
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#" className="fanchor">
-                Twitter
+                <a href="www.linkedin.com/in/kashifcreativedesigner" target="_blank" className="fanchor">
+                Linkedln
                 </a>
               </li>
               <li className="fcontents">
-                <a href="" className="fanchor">
+                <a href="https://www.instagram.com/p/DDpH8ltqQCY/" target="_blank" className="fanchor">
                 Instagram
                 </a>
               </li>
               <li className="fcontents">
-                <a href="" className="fanchor">
+                <a href="https://dribbble.com/kashifdesign58" target="_blank" className="fanchor">
                 Dribble
                 </a>
               </li>
               <li className="fcontents">
-                <a href="" className="fanchor">
-                Carrers
+                <a href="https://x.com/BlennexDesign" target="_blank" className="fanchor">
+                Twitter
                 </a>
               </li>
+              <Link to="/contact">
               <li className="fcontents">
-                <a href="" className="fanchor">
+                <a href="#contactform" className="fanchor">
                 Contact
                 </a>
               </li>
+              </Link>
             </ul>
           </div>
         </div>
