@@ -1,0 +1,66 @@
+:root {
+    --Main-Heading : #000000;
+    --second-Heading : #1E1E1E;
+    --client-title : #757575;
+    --client-desrp : #B3B3B3;
+    --bg-color :  #ffffff;
+    --client-border : #D9D9D9;
+    --midnight-black: #232323;
+
+}
+/* Footer  */
+.footer {
+    background-color:var(--midnight-black);
+    color: var(--bg-color);
+    padding-top: clamp(1.5rem,2vw,3.5rem);
+    padding-bottom: clamp(1.5rem,2vw,3rem);
+}
+
+.fHeading {
+    font-size: clamp(1rem,2vw,1.5rem);
+    margin: clamp(0.5rem,1.5vw,1.5rem);
+    font-weight: 500;
+}
+
+.fdiv {
+    height: 100%;
+}
+.fline {
+    border: 0.1rem solid #ffffff;
+    width: 50%;
+    margin: clamp(0.5rem,1.5vw,1.5rem);
+}
+
+.fcontents{
+    font-size: clamp(0.9rem,1.2vw,1.3rem);
+    list-style: none;
+    color: var(--bg-color);
+}
+
+.fcontents:hover{
+    transform: scale(0.99);
+    color: var(--client-title);
+}
+.fanchor {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+   
+}
+.footerul {
+    padding-left: clamp(0.5rem,1.5vw,1.5rem);
+}
+.footerp {
+    text-align: center;
+    font-size: clamp(0.5rem,1.2vw,.9em);
+    color: var(--bg-color);
+}
+.footerp a{
+    text-decoration: none;
+    color: var(--client-title);
+}
+
+
+
+
+

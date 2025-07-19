@@ -1,0 +1,128 @@
+
+
+   .portfolio-section {
+      
+      font-family: sans-serif;
+      padding-top: 70px;
+    }
+.portfolio-title{
+  color: var(--midnight-black);
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  padding-bottom: 120px;
+}
+    .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .scroll-row {
+      display: flex;
+      gap: 20px;
+      animation: scroll-left 20s linear infinite;
+      /* Pause animation on hover */
+      animation-play-state: running;
+      cursor: grab;
+    }
+    .scroll-row:hover {
+      animation-play-state: paused;
+      cursor: grabbing;
+    }
+
+    .scroll-row.reverse {
+      flex-direction: row-reverse;
+      animation: scroll-right 20s linear infinite;
+      animation-play-state: running;
+    }
+    .scroll-row.reverse:hover {
+      animation-play-state: paused;
+    }
+
+    .scroll-row img {
+      height: 230px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      user-select: none;
+      pointer-events: none; /* so images don't interfere with hover */
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(50%);
+      }
+    }
+
+
+
+
+    
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+
+.portfolio-section{
+  padding-top: 0;
+}
+ .scroll-row img {
+      height: 150px;
+      border-radius: 8px;
+      
+    }
+    .portfolio-title{
+  font-size: 1.4rem;
+}
+.portfolio-section{
+  padding-top:40px ;
+}
+.portfolio-title{
+  padding-bottom: 40px;
+}
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+ .scroll-row img {
+      height: 180px;
+      border-radius: 8px;     
+    }
+ .portfolio-title{
+  font-size: 1.8rem;
+}
+.portfolio-section{
+  padding-top:60px ;
+}
+.portfolio-title{
+  padding-bottom: 60px;
+}
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+.portfolio-title{
+  font-size: 2.2rem;
+}
+ .scroll-row img {
+      height: 200px;
+      border-radius: 8px;     
+    }
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+  
+}

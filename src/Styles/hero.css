@@ -1,0 +1,133 @@
+
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+
+/* Header css  */
+
+.css-hero-section{
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
+.hero h1{
+/* font-size: clamp(1.25rem, -0.5357rem + 8.9286vw, 7.5rem); */
+font-size: clamp(1.85rem, -0.5357rem + 8.9286vw, 7.5rem);
+font-family: sans-serif;
+font-weight: 700;
+}
+.hero h1 span{
+  color: #97D8E8;
+}
+.hero p{
+font-size: clamp(0.75rem, 0.4286rem + 1.6071vw, 1.875rem);
+letter-spacing: 3px;
+font-family: sans-serif;
+color: var(--charcoal-shadow);
+}
+.button2{
+  
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+}
+.button2 button{
+  background-color: var(--charcoal-shadow);
+  color: var(--frost-blue);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/*  Ripple Btn Css */
+
+.ripple-container {
+  position: relative;
+  display: inline-block;
+}
+
+.organic-ripple-button {
+  position: relative;
+  padding: 15px 25px !important;
+  font-size: 1rem !important;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: visible;
+  z-index: 1;
+  top: -80px;
+}
+
+/* Ripple base */
+.bton{
+  
+  
+  animation: zoomInOut 2.5s infinite;
+  transition: transform 0.7s;
+
+}
+@keyframes zoomInOut {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.bton:hover {
+  animation: none;
+
+
+}
+
+
+
+
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+.css-hero-section{
+  padding-top: 60px;
+  padding-bottom: 0px;
+  
+}
+.hero h1{
+  text-align: center;
+  word-spacing: 2px;
+}
+.hero p{
+  text-align: center;
+  font-size: 16px;
+}
+.bton{
+  font-size: 8px !important;
+}
+ }
+
+
+/* Medium screens (tablets: 576px to 767.98px) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+  
+
+} */
+
+/* Large screens (768px to 1199.98px) */
+/* @media (min-width: 768px) and (max-width: 1199.98px) {
+ 
+} */
+
+/* Extra-large screens (1200px and above) */
+/* @media (min-width: 1200px) {
+ 
+} */
+
+
+

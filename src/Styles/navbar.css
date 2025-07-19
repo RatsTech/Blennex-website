@@ -1,0 +1,366 @@
+
+:root {
+  --sky-mist: #97d8e8;    /* Light, airy blue — soft and fresh */
+  --storm-gray: #636464;  /* Neutral mid-gray — balanced and modern */
+  --midnight-black: #232323; /* Very dark gray, almost black — bold and sleek */
+  --charcoal-shadow: #4A4849; /* Deep gray with a slight warm tone — subtle and elegant */
+  --frost-blue: #CCEBF3;  /* Pale icy blue — cool and clean */
+}
+
+.nav-logo {
+  height: 55px;
+  transition: height 0.3s ease;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+/* Navbar css */
+
+  /* Default navbar style */
+  .navbar {
+    transition: background-color 0.7s, box-shadow 0.7s ease-in-out;
+  }
+
+  /* Style when user scrolls down */
+  .navbar.scrolled {
+    background-color:var(--midnight-black) !important; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+/* Default (light background) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* When navbar is scrolled (dark background) */
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+  .navbar.scrolled  .css-nav-link{
+    color: #F6F8FB !important;
+    font-size: 1rem;
+  }
+.navbar.scrolled .portfolio-link{
+  color: #ffffff;
+}
+.navbar.scrolled .portfolio-link:hover{
+  color: var(--sky-mist);
+}
+
+.navbar.scrolled .breadcrumb-separator {
+ color: #F6F8FB;
+}
+.css-nav-link-container{
+  padding-left: 3rem;
+  padding-right:1.3rem;
+}
+.css-nav-link {
+  font-size: 1.rem;
+  font-family: sans-serif;
+  color: var(--midnight-black);
+  font-weight: 400;
+ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Material Design-style easing */
+ transition: color .5s ease-in-out;
+}
+.portfolio-link{
+  background-color: transparent;
+  padding: 8px 20px;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--midnight-black); /* Or any text color */
+  font-family: sans-serif;
+  font-weight: 400;
+  transition: all .5s ease-in-out;
+}
+.portfolio-link:hover{
+ background-color: transparent;
+  color: var(--sky-mist); /* optional hover color */
+  cursor: pointer;
+}
+
+.css-nav-link:hover{
+  transform: scale(1.1);
+}
+.css-portfolio-link{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1rem;
+  background-color: var(--storm-gray);
+  padding: .3rem 1rem .3rem 1rem;
+  border-radius: 20px;
+}
+
+.css-portfolio-link:hover{
+  color: var(--storm-gray);
+  background-color: #F6F8FB;
+
+}
+.css-portfolio-link-blue{
+  font-family: sans-serif;
+  color: #F6F8FB;
+  font-size: 1.1rem;
+  background-color: var(--sky-mist);
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+}
+.css-portfolio-link-blue:hover{
+  background-color: #F6F8FB;
+  color: var(--midnight-black);
+}
+
+
+
+.breadcrumb-separator {
+  color: var(--midnight-black);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 4px; /* small spacing between text and arrow */
+  display: inline-block;
+  user-select: none;
+  padding-left: 5px;
+   transition: transform 0.4s ease-in-out; /* Material Design-style easing */
+   transition: color .5s ease-in-out;
+}
+
+
+
+.breadcrumb-separator:hover {
+  cursor: help;
+  transform: scale(1.1);
+}
+
+/* Optional: Smooth dropdown styles */
+/* Modern Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(35, 35, 35, 0.1); /* Midnight black subtle shadow */
+  padding: 0.5rem 0;
+  font-family: sans-serif;
+
+}
+
+.dropdown-item {
+
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--sky-mist);
+  font-weight: 500;
+}
+
+
+/* Remove Bootstrap's default caret arrow */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+
+
+
+/* Show dropdown menu on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Optional: Add smooth transition */
+.dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: Rotate the breadcrumb icon on hover */
+.dropdown:hover .breadcrumb-separator {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.has-submenu:hover .submenu {
+  display: flex;
+}
+
+.submenu-link {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: var(--frost-blue);
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+.submenu-link:hover {
+  color: var(--sky-mist);
+}
+
+
+@media screen and (max-width: 425px) {
+  .css-nav-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .nav-logo {
+    height: 35px;
+    margin-right: 8px; /* reduce or remove gap between logo and toggler */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Push it to the right */
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap !important;
+    gap: 0px !important;
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+  }
+}
+
+.navigation{
+  justify-content: space-between;
+ 
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--midnight-black);
+    z-index: 1050;
+    padding: 2rem 2.5rem;
+    overflow-y: auto;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Close “×” button on right */
+  .navbar-toggler.collapsed::before {
+    display: none;
+  }
+
+  #navbarNav.show ~ .navbar-toggler::before {
+    content: "×";
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1102;
+  }
+
+  #navbarNav.show ~ .navbar-toggler .navbar-toggler-icon {
+    display: none;
+  }
+
+  /* Navigation menu styles */
+  .navbar-collapse.show .navbar-nav.css-breadcrumb-nav {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+    align-items: flex-start !important;
+  }
+
+  .navbar-collapse.show .nav-item {
+    width: 100%;
+    border-bottom: 0.9px solid #ffffff;
+    padding-bottom: 0.4rem;
+    text-align: left !important;
+  }
+
+  .navbar-collapse.show .nav-link,
+  .navbar-collapse.show .dropdown-item {
+    font-size: 1.3rem;
+    align-self: flex-start;
+    width: 100%;
+    text-align: left !important;
+  }
+  .navbar-collapse.show .nav-link{
+    color: #F6F8FB !important;
+  }
+  .navbar-collapse.show .nav-link:hover {
+    transform: scale(0.99); /* or your hover color */
+    border-radius: 10px;
+  }
+  .navbar-collapse.show .dropdown-menu {
+    background-color: #F6F8FB;
+    color: var(--midnight-black) !important;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse.show .dropdown-item:hover {
+    border-radius: 12px !important;
+    color: var(--sky-mist) !important;
+    background-color: #ffffff !important;
+    cursor: default;
+  }
+
+  .navbar-collapse.show .breadcrumb-separator {
+    display: none;
+  }
+
+  .navbar-collapse.show > div:last-child {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar-collapse.show .navbar-nav{
+    width: 100%;
+  }
+  .navbar-collapse.show .portfolio-link {
+    background-color: #F6F8FB;
+    color: var(--midnight-black);
+  }
+  .navbar-collapse.show .css-portfolio-link-blue,
+  .navbar-collapse.show .portfolio-link {
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-align: center !important; /* Buttons remain centered */
+  }
+}
+

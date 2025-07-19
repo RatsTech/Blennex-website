@@ -1,0 +1,210 @@
+
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  margin-top: 1rem;
+  grid-auto-rows: minmax(500px, auto); /* Adjust 500px based on your design */
+}
+
+
+/* Styling card */
+.cards-div{
+  margin: 0;
+  padding-bottom: 15px;
+ 
+}
+.card-css {
+  box-shadow: 0 .3rem .8rem rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--sky-mist);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 430px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Important! */
+}
+
+
+.card-css:hover {
+
+   transform: translateY(-5px) scale(1.12);
+  border-color: var(--storm-gray);
+}
+
+.heading-txt {
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  font-size: 2.3rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+}
+.price-text{
+font-size: 1.7rem;
+color: var(--charcoal-shadow);
+}
+.thicker-hr{
+height: 2.5px !important;
+border: none;
+background-color:var(--midnight-black);
+}
+
+
+/* ********************Include Icon **********************/
+.icon-div{
+display: flex; 
+align-items: center; 
+gap: 0px;
+
+}
+
+
+.icon-div p{
+
+font-size: 1.3rem;
+font-family: sans-serif;
+color: var(--midnight-black);
+font-weight: 600;
+margin: .3rem 0 .3rem 0;
+margin-left: 10px;
+
+}
+
+.toggle-includes-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid var(--storm-gray);
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--storm-gray);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toggle-includes-btn:hover {
+  background-color: var(--storm-gray);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.includes-list {
+  margin-top: -14px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.includes-list.show {
+  max-height: 500px; /* Enough height to contain the whole list */
+  opacity: 1;
+}
+
+
+/* ****************** Styling li******************************* */
+ .spaced-list li {
+    margin-bottom: .6rem; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--charcoal-shadow);
+    margin-right: 100px;
+    
+  }
+ .spaced-list li span{
+  margin-right: 10px;
+ }
+.best-plan-p{
+  display: inline;
+  padding-left: .3rem;
+  font-size: 1rem;
+  color: var(--midnight-black);
+}
+.plans-button {
+  padding: 0.3rem 1.5rem !important;
+  background-color: var(--sky-mist);
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.plans-button:hover {
+  background-color: var(--storm-gray);
+  color: white;
+  
+}
+
+
+
+/* Resonponsiveness */
+/* Small screens (phones: <576px) */
+@media (max-width: 575.98px) {
+  .heading-txt{
+    font-size: 1.7rem;
+  }
+  .plans-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    
+  }
+   .best-plan-small-icon {
+  width: 15px;
+  height: 15px;
+}
+ .best-plan-p{
+  font-size: .8rem;
+ }
+}
+
+/* Medium screens (tablets: 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .card-css:hover {
+
+   transform: translateY(-5px) scale(0.99);
+  border-color: var(--storm-gray);
+}
+  .plans-button {
+    font-size: 1.4rem;
+    padding: 0.45rem 2rem;
+  }
+ .best-plan-p{
+  font-size: 1.2rem;
+  
+ }
+ .best-plan-small-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+}
+
+/* Large screens (768px to 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .best-plan-p{
+    font-size: .9rem;
+  }
+  .plans-button {
+    font-size: 1.4rem;
+    padding: 0.5rem 2.3rem;
+  }
+  .best-plan-small-icon {
+  width: 15px;
+  height: 15px;
+}
+}
+
+/* Extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .plans-button {
+    font-size: 1.5rem;
+    padding: 0.5rem 2.5rem;
+  }
+}
+
+
+
