@@ -166,10 +166,11 @@ function Footer() {
   <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" rel='noopener noreferrer'>Ratstech</a>. All rights reserved.</p>
   <img
         id="navbarLogo"
-        className="nav-logo"
+        className="foot-logo"
         src={logo}
         alt="Blennex Design Logo"
         href="#"
+        
       />
     </div>
 </footer>

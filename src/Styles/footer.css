@@ -59,7 +59,9 @@
     text-decoration: none;
     color: var(--client-title);
 }
-
+.foot-logo{
+    height: 25px;
+}
 
 
 
