@@ -17,7 +17,7 @@ function Client({img, quote,clientTitle,clientInfo}) {
                 <img
                   src={img}
                   className="w-100 h-100 object-fit-cover"
-                  alt="Client image"
+                  alt=" Happy Client"
                 />
               </div>
               <div className="clientinfo text-start flex-grow-1">

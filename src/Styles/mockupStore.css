@@ -57,11 +57,13 @@ tr td{
   font-weight: 600;
   
 }
-td a{
+td button{
   text-decoration: none;
   color: var(--sky-mist);
+  border: none;
+  background-color: transparent;
 }
-td a:hover{
+td button:hover{
   text-decoration: underline;
 }
 

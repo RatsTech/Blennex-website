@@ -48,7 +48,7 @@ function MockupStore() {
                 <td className="py-4">{content.example}</td>
                 <td className="bold-row py-4">${content.price}</td>
                 <td className="py-4">
-                <a href="#">View Details</a>
+                <button>View Details</button>
                 </td>
           </tr>
             })

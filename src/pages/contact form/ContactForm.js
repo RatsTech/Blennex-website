@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import StatusMessage from '../../components/StatusMessage';
 import '../../Styles/contactForm.css';
 import instagramIcon from '../../assets/images/Socail Icons/instagram.png'
 import linkedinIcon from '../../assets/images/Socail Icons/linkedin.png'
@@ -12,6 +13,7 @@ function ContactForm({navbar}) {
   const [company, setCompany] = useState('');
   const [message, setMessage] = useState('');
   const [services, setServices] = useState([]);
+  const [submissionStatus,setSubmissionStatus] = useState(null)
 
   const serviceOptions = [
     "Logo Design",
@@ -43,7 +45,7 @@ function ContactForm({navbar}) {
     };
 
     try {
-      const response = await fetch('http://localhost/blennex-website/submit_form.php', {
+      const response = await fetch('https://blennexdesign.com/submit_form.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -53,15 +55,31 @@ function ContactForm({navbar}) {
 
       const result = await response.json();
       if (result.status === 'success') {
-        alert('Form submitted successfully!');
+        setSubmissionStatus('success');
+        setName('');
+        setEmail('');
+        setCompany('')
+        setMessage('');
+        setServices([])
       } else {
-        alert('Error: ' + result.message);
+        setSubmissionStatus('error')
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Failed to submit form.');
+     setSubmissionStatus('error')
     }
   };
+
+
+ useEffect(()=>{
+  if(submissionStatus){
+    const timer = setTimeout(() => {
+      setSubmissionStatus(null)
+    }, 5000);
+
+     return ()=> clearTimeout(timer)
+  }
+ 
+ },[submissionStatus])
 
   return (
     <>
@@ -85,6 +103,17 @@ function ContactForm({navbar}) {
             ))}
           </div>
         </div>
+        <StatusMessage
+            type={submissionStatus}
+            message={
+              submissionStatus === 'success'
+                ? '🎉 Your message has been sent successfully!'
+                : submissionStatus === 'error'
+                ? '❌ Something went wrong. Please try again later.'
+                : ''
+            }
+          />
+
        <form onSubmit={handleSubmit} className="contact-form">
   <div className="row two-cols">
     <div className="field-wrapper">

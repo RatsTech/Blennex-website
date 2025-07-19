@@ -1,4 +1,4 @@
-import React, {useRef,useState} from 'react'
+import React from 'react'
 
 function PackageCard({title, description, price , includes}) {
   // const includesRef = useRef(null);

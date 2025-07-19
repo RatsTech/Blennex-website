@@ -15,35 +15,35 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#home" className="fanchor">
+                <a href="#home" className="fanchor"rel="noopener noreferrer">
                 Home </a>
               </li>
               <li className="fcontents">
-                <a href="#work" className="fanchor">
+                <a href="#work" className="fanchor"rel="noopener noreferrer">
                 Work</a>
               </li>
               <li className="fcontents">
-                <a href="#aboutus" className="fanchor">
+                <a href="#aboutus" className="fanchor"rel="noopener noreferrer">
                 About Us 
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#services" className="fanchor">
+                <a href="#services" className="fanchor"rel="noopener noreferrer">
                 Services
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#testimonials" className="fanchor">
+                <a href="#testimonials" className="fanchor"rel="noopener noreferrer">
                 Client Testimonials
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#work" className="fanchor">
+                <a href="#work" className="fanchor"rel="noopener noreferrer">
                 Portfolio
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#contactus" className="fanchor">
+                <a href="#contactus" className="fanchor"rel="noopener noreferrer">
                 Contact Us
                 </a>
               </li>
@@ -56,31 +56,31 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#services" className="fanchor">
+                <a href="#services" className="fanchor"rel="noopener noreferrer">
                   Graphic Design
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#services" className="fanchor">
+                <a href="#services" className="fanchor"rel="noopener noreferrer">
                   UI/UX
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#services" className="fanchor">
+                <a href="#services" className="fanchor"rel="noopener noreferrer">
                   Brand Identity
                 </a>
               </li>
              <li className="fcontents">
-                <a href="#services" className="fanchor">
+                <a href="#services" className="fanchor"rel="noopener noreferrer">
                   Packaging
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#services" className="fanchor" >
+                <a href="#services" className="fanchor"rel="noopener noreferrer" >
                 Brand Identity &amp; Labels</a>
               </li>
               <li className="fcontents">
-                <a href="#services" className="fanchor" >
+                <a href="#services" className="fanchor"rel="noopener noreferrer" >
                 3D Product Mockups </a>
               </li>
             </ul>
@@ -92,27 +92,27 @@ function Footer() {
           <div className="footerLinks w-100">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="#Kuza bandi Swat" className="fanchor">
+                <a href="#Kuza bandi Swat" className="fanchor"rel="noopener noreferrer">
                 Kuza bandi Swat
                 </a>
               </li>
               <li className="fcontents">
-              <a href="#KPK Pakistan" className="fanchor">
+              <a href="#KPK Pakistan" className="fanchor"rel="noopener noreferrer">
                 KPK Pakistan
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#+9232-9228145" className="fanchor">
+                <a href="#+9232-9228145" className="fanchor"rel="noopener noreferrer">
                 +9232-9228145
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#blennexofficial@gmail.com" className="fanchor">
+                <a href="#blennexofficial@gmail.com" className="fanchor"rel="noopener noreferrer">
                 blennexofficial@gmail.com
                 </a>
               </li>
               <li className="fcontents">
-                <a href="#home" className="fanchor">
+                <a href="#home" className="fanchor"rel="noopener noreferrer">
                 www.blennexdesign.com
                 </a>
               </li>
@@ -125,33 +125,33 @@ function Footer() {
           <div className="fcontacts">
             <ul className="footerul">
               <li className="fcontents">
-                <a href="https://www.behance.net/kashifkhandesign"target="_blank" className="fanchor">
+                <a href="https://www.behance.net/kashifkhandesign"target="_blank" className="fanchor"rel="noopener noreferrer">
                 Behance
                 </a>
               </li>
               <li className="fcontents">
-                <a href="www.linkedin.com/in/kashifcreativedesigner" target="_blank" className="fanchor">
+                <a href="www.linkedin.com/in/kashifcreativedesigner" target="_blank" className="fanchor"rel="noopener noreferrer">
                 Linkedln
                 </a>
               </li>
               <li className="fcontents">
-                <a href="https://www.instagram.com/p/DDpH8ltqQCY/" target="_blank" className="fanchor">
+                <a href="https://www.instagram.com/p/DDpH8ltqQCY/" target="_blank" className="fanchor"rel="noopener noreferrer">
                 Instagram
                 </a>
               </li>
               <li className="fcontents">
-                <a href="https://dribbble.com/kashifdesign58" target="_blank" className="fanchor">
+                <a href="https://dribbble.com/kashifdesign58" target="_blank" className="fanchor"rel="noopener noreferrer">
                 Dribble
                 </a>
               </li>
               <li className="fcontents">
-                <a href="https://x.com/BlennexDesign" target="_blank" className="fanchor">
+                <a href="https://x.com/BlennexDesign" target="_blank" className="fanchor"rel="noopener noreferrer">
                 Twitter
                 </a>
               </li>
               <Link to="/contact">
               <li className="fcontents">
-                <a href="#contactform" className="fanchor">
+                <a href="#contactform" className="fanchor"rel="noopener noreferrer">
                 Contact
                 </a>
               </li>
@@ -163,7 +163,7 @@ function Footer() {
     </div>
   </div>
   <div className="d-flex justify-content-around align-items-center">
-  <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank">Ratstech</a>. All rights reserved.</p>
+  <p className="footerp pt-5">Copyright &copy; 2025 <a href="https://github.com/RatsTech" target="_blank" rel='noopener noreferrer'>Ratstech</a>. All rights reserved.</p>
   <img
         id="navbarLogo"
         className="nav-logo"

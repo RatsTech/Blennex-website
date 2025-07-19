@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Connect to database (Hostinger credentials)
-$conn = new mysqli("localhost", "blennex", "Blennex6758#", "blennex_design");
+$conn = new mysqli("localhost", " u478488433_blennex", "Blennex6758#", "u478488433_ blennex_design");
 if ($conn->connect_error) {
     http_response_code(500);
     echo json_encode(['status' => 'error', 'message' => 'Database connection failed: ' . $conn->connect_error]);

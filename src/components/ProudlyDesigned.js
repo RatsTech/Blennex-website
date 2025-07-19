@@ -23,68 +23,68 @@ function ProudlyDesigned() {
       <div className="logo-slider-container overflow-hidden">
         <ul className="logo-slider d-flex">
           <li>
-            <img src={logo} alt="Logo1" />
+            <img src={logo} alt="Our client brand" />
           </li>
           <li>
-            <img src={logo} />
+            <img src={logo} alt='Our client brand'/>
           </li>
           <li>
-            <img src={logo} />
+            <img src={logo} alt='our client brand' />
           </li>
           <li>
-            <img src={logo} />
+            <img src={logo} alt='our client brand' />
           </li>
           <li>
-            <img src={logo} />
+            <img src={logo} alt='our client brand'/>
           </li>
           {/* Duplicate for smooth infinite scroll */}
           <li>
-            <img src={logo}alt="Logo1" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo2" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo3" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo4" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo5" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo1" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo2" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo3" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo4" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo5" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo5" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo1" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo2" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo3" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo4" />
+            <img src={logo} alt ='our client brand ' />
           </li>
           <li>
-            <img src={logo} alt="Logo5" />
+            <img src={logo} alt ='our client brand ' />
           </li>
         </ul>
       </div>
