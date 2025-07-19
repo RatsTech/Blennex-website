@@ -16,8 +16,8 @@ function IndividualService({icon, title , description}) {
                 <p className="card-text">
                  {description}
                 </p>
-                <a
-                  href="#"
+                <button
+                  
                   className="btn btn-primary text-uppercase css-craft-btn"
                 >
                   Learn more
@@ -36,7 +36,7 @@ function IndividualService({icon, title , description}) {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </div>
