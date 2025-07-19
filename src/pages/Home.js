@@ -20,6 +20,7 @@ function Home({navbar}) {
  
    {navbar}
     <Hero/>
+     <Hero/>
     <ProudlyDesigned/>
     <Portfolio/>
     <Services/>
